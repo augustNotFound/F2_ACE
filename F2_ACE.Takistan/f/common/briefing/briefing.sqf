@@ -5,7 +5,12 @@
 // JIP CHECK
 // Prevents the script executing until the player has synchronised correctly:
 
-#include "f\common\f_waitForJIP.sqf"
+if (!isDedicated && (player != player)) then
+{
+    waitUntil {player == player};
+    waitUntil {time > 10};
+};
+
 
 // ====================================================================================
 
@@ -36,7 +41,7 @@ if (_unitside != (side (leader group player))) then {_unitside = (side (leader g
 
 if (_unitside == west) exitwith {
 
-#include "f\common\f_briefing_west.sqf"
+#include "f_briefing_west.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -51,7 +56,7 @@ if (_unitside == west) exitwith {
 
 if (_unitside == east) exitwith {
 
-#include "f\common\f_briefing_east.sqf"
+#include "f_briefing_east.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -66,7 +71,7 @@ if (_unitside == east) exitwith {
 
 if (_unitside == resistance) exitwith {
 
-#include "f\common\f_briefing_res.sqf"
+#include "f_briefing_res.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -81,7 +86,7 @@ if (_unitside == resistance) exitwith {
 
 if (_unitside == civilian) exitwith {
 
-#include "f\common\f_briefing_civ.sqf"
+#include "f_briefing_civ.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then

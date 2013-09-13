@@ -8,17 +8,17 @@ f_processParamsArray = [] execVM "f\common\f_processParamsArray.sqf";
 
 // ====================================================================================
 
-// F2 - Disable Saving and Auto Saving
+// F2_ACE - Run client-side settings, ACE settings
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-enableSaving [false, false];
+#include "f\common\f_clientSettings.sqf";
 
 // ====================================================================================
 
 // F2 - CO Briefing
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-[] execVM "briefing.sqf";
+[] execVM "f\common\briefing\briefing.sqf";
 
 // ====================================================================================
 
@@ -66,14 +66,7 @@ f_endSelected = -1;
 
 // ====================================================================================
 
-// F2 - Disable BIS Conversations
-// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
-
-player setVariable ["BIS_noCoreConversations", true];
-
-// ====================================================================================
-
 // F2 - ORBAT Notes
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-[] execVM "f\common\f_orbatNotes.sqf";
+[] execVM "f\common\briefing\f_orbatNotes.sqf";
