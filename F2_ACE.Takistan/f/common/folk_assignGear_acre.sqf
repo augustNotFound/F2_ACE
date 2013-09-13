@@ -46,7 +46,7 @@
 
 _radio1 = "ACRE_PRC117F"; //longrange
 _radio2 = "ACRE_PRC148";  //midrange
-_radio3 = "ACRE_PRC343";
+_radio3 = "ACRE_PRC343";  //shortrange
 
 // ====================================================================================
 

@@ -4,7 +4,7 @@
 
 // DECLARE VARIABLES AND FUNCTIONS
 
-private ["_faction","_typeofUnit","_unit","_useBackpacks"];
+private ["_faction","_typeofUnit","_unit"];
 private [
 //"_faction",												
 "_glrifle","_glriflemag","_glmag",						
@@ -42,14 +42,11 @@ _faction = toLower (faction _unit);
 // If the unitfaction is different from the group leader's faction and the unit is not a vehicle, the latters faction is used
 if ((_unit isKindOF "CAManBase")&&(_faction != toLower (faction (leader group _unit)))) then {_faction = toLower (faction (leader group _unit))};
 
-_useBackpacks = paramsArray select 0;
-_useACRE = paramsArray select 1;
-
 switch(_faction) do
 {
 case "pmc_baf":{_faction = "bis_un";};						// PMC get the UN gear
-case "civ":{_faction="bis_tk_civ";_useBackpacks=0;};		// CIV as TIK_CIV (note: no backpacks for A2 original units)
-case "civ_ru":{_faction="bis_tk_civ";_useBackpacks=0;};		// CIV_RU as TK_CIV (note: no backpacks for A2 original units)
+case "civ":{_faction="bis_tk_civ";};		// CIV as TIK_CIV (note: no backpacks for A2 original units)
+case "civ_ru":{_faction="bis_tk_civ";};		// CIV_RU as TK_CIV (note: no backpacks for A2 original units)
 };
 
 // DEBUG
@@ -58,6 +55,7 @@ case "civ_ru":{_faction="bis_tk_civ";_useBackpacks=0;};		// CIV_RU as TK_CIV (no
 	player sideChat format ["DEBUG (assignGear.sqf): Player faction: %1",_faction];
 	};
 
+
 // ====================================================================================
 
 // GEAR: US
@@ -65,7 +63,7 @@ case "civ_ru":{_faction="bis_tk_civ";_useBackpacks=0;};		// CIV_RU as TK_CIV (no
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_us") then {
-#include "folk_assignGear_us.sqf"
+#include "folk_assignGear_m16a4.sqf"
 };
 
 // ====================================================================================
@@ -75,7 +73,7 @@ if (_faction == "bis_us") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "usmc") then {
-#include "folk_assignGear_usmc.sqf"
+#include "folk_assignGear_m16a4.sqf"
 };
 
 // ====================================================================================
@@ -85,7 +83,7 @@ if (_faction == "usmc") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "cdf") then {
-#include "folk_assignGear_cdf.sqf"
+#include "folk_assignGear_m16a2.sqf"
 };
 
 // ====================================================================================
@@ -95,7 +93,7 @@ if (_faction == "cdf") then {
 // slot; it automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_baf") then {
-#include "folk_assignGear_baf.sqf"
+#include "folk_assignGear_l85.sqf"
 };
 
 // ====================================================================================
@@ -105,7 +103,7 @@ if (_faction == "bis_baf") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_tk") then {
-#include "folk_assignGear_tk.sqf"
+#include "folk_assignGear_ak74.sqf"
 };
 
 // ====================================================================================
@@ -115,7 +113,7 @@ if (_faction == "bis_tk") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "ru") then {
-#include "folk_assignGear_ru.sqf"
+#include "folk_assignGear_ak74m.sqf"
 };
 
 // ====================================================================================
@@ -125,7 +123,7 @@ if (_faction == "ru") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_tk_ins") then {
-#include "folk_assignGear_tk_ins.sqf"
+#include "folk_assignGear_akm.sqf"
 };
 
 // ====================================================================================
@@ -135,7 +133,7 @@ if (_faction == "bis_tk_ins") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "ins") then {
-#include "folk_assignGear_ins.sqf"
+#include "folk_assignGear_ak74.sqf"
 };
 
 // ====================================================================================
@@ -145,7 +143,7 @@ if (_faction == "ins") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_tk_gue") then {
-#include "folk_assignGear_tk_gue.sqf"
+#include "folk_assignGear_akm.sqf"
 };
 
 // ====================================================================================
@@ -155,7 +153,7 @@ if (_faction == "bis_tk_gue") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "gue") then {
-#include "folk_assignGear_gue.sqf"
+#include "folk_assignGear_ak74.sqf"
 };
 
 // ====================================================================================
@@ -165,7 +163,7 @@ if (_faction == "gue") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_un") then {
-#include "folk_assignGear_un.sqf"
+#include "folk_assignGear_m16a2.sqf"
 };
 
 // ====================================================================================
@@ -175,7 +173,7 @@ if (_faction == "bis_un") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_cz") then {
-#include "folk_assignGear_cz.sqf"
+#include "folk_assignGear_ak74.sqf" // For now, as no seperate loadout for Czech Army available.
 };
 
 // ====================================================================================
@@ -185,7 +183,7 @@ if (_faction == "bis_cz") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_ger") then {
-#include "folk_assignGear_ger.sqf"
+#include "folk_assignGear_m4.sqf" // For now, as no seperate loadout for German Forces available.
 };
 
 // ====================================================================================
@@ -195,7 +193,7 @@ if (_faction == "bis_ger") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_tk_civ") then {
-#include "folk_assignGear_tk_civ.sqf"
+#include "folk_assignGear_akm.sqf"
 };
 
 // ====================================================================================
@@ -205,18 +203,20 @@ if (_faction == "bis_tk_civ") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_civ_special") then {
-#include "folk_assignGear_civ_special.sqf"
+#include "folk_assignGear_akm.sqf"
 };
 
 // ====================================================================================
 
 // GEAR: ACRE
-// The following block of code executes only if the ACRE parameter is set to true; it 
-// automatically includes a file which contains the appropriate equipment data.
 
-if (_useACRE == 1) then {
 _this execVM "f\common\folk_assignGear_acre.sqf";
-};
+
+// ====================================================================================
+
+// GEAR: ACE
+
+#include "folk_assignGear_ace.sqf"
 
 // ====================================================================================
 
