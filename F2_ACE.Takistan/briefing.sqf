@@ -11,281 +11,90 @@
 
 // DECLARE VARIABLES AND FUNCTIONS
 
-private ["_unitfaction"];
+private ["_unitside"];
 
 // ====================================================================================
 
-// DETECT PLAYER FACTION
-// The following code detects what faction the player's slot belongs to, and stores
-// it in the private variable _unitfaction
+// DETECT PLAYER side
+// The following code detects what side the player's slot belongs to, and stores
+// it in the private variable _unitside
 
-_unitfaction = toLower (faction player);
+_unitside = (side player);
 
-// If the unitfaction is different from the group leader's faction, the latters faction is used
-if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction = toLower (faction (leader group player))};
-
-// As PMC units are used as exchange medics and engineers, they are defaulted to the UN briefing.
-// Change "bis_un" to "bis_tk_gue" when using the TK Local Platoon
-if (_unitfaction == "pmc_baf") then {_unitfaction = "bis_un"}; 
+// If the unitside is different from the group leader's side, the latters side is used
+if (_unitside != (side (leader group player))) then {_unitside = (side (leader group player))};
 
 // DEBUG
 	if (f_var_debugMode == 1) then
 	{
-	player sideChat format ["DEBUG (briefing.sqf): Player faction: %1",_unitfaction];
+	player sideChat format ["DEBUG (briefing.sqf): Player side: %1",_unitside];
 	};
 
 // ====================================================================================
 
-// BRIEFING: US
-// The following block of code executes only if the player is in a US slot; it 
-// automatically includes a file which contains the appropriate briefing data.
+// BRIEFING: WEST
 
-if (_unitfaction == "bis_us") exitwith {
+if (_unitside == west) exitwith {
 
-#include "f\common\f_briefing_us.sqf"
+#include "f\common\f_briefing_west.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
 	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitside];
 	};
 };
 
 // ====================================================================================
 
-// BRIEFING: BRITISH ARMED FORCES
-// The following block of code executes only if the player is in a BRITISH ARMED FORCES
-// slot; it automatically includes a file which contains the appropriate briefing data.
+// BRIEFING: EAST
 
-if (_unitfaction == "bis_baf") exitwith {
+if (_unitside == east) exitwith {
 
-#include "f\common\f_briefing_baf.sqf"
+#include "f\common\f_briefing_east.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
 	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitside];
 	};
 };
 
 // ====================================================================================
 
-// BRIEFING: TAKISTANI ARMY
-// The following block of code executes only if the player is in a TAKISTANI ARMY slot; it 
-// automatically includes a file which contains the appropriate briefing data.
+// BRIEFING: RESISTANCE
 
-if (_unitfaction == "bis_tk") exitwith {
+if (_unitside == resistance) exitwith {
 
-#include "f\common\f_briefing_tk.sqf"
+#include "f\common\f_briefing_res.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
 	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitside];
 	};
 };
 
 // ====================================================================================
 
-// BRIEFING: TAKISTANI MILITIA
-// The following block of code executes only if the player is in a TAKISTANI MILITIA slot; it 
-// automatically includes a file which contains the appropriate briefing data.
+// BRIEFING: CIVILIAN
 
-if (_unitfaction == "bis_tk_ins") exitwith {
+if (_unitside == civilian) exitwith {
 
-#include "f\common\f_briefing_tk_ins.sqf"
+#include "f\common\f_briefing_civ.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
 	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitside];
 	};
 };
 
-// ====================================================================================
-
-// BRIEFING: TAKISTANI LOCALS (INDEPENDENT)
-// The following block of code executes only if the player is in a TAKISTANI LOCALS (INDEPENDENT) slot; it 
-// automatically includes a file which contains the appropriate briefing data.
-
-if (_unitfaction == "bis_tk_gue") exitwith {
-
-#include "f\common\f_briefing_tk_gue.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
 
 // ====================================================================================
 
-// BRIEFING: UN
-// The following block of code executes only if the player is in a UN slot; it 
-// automatically includes a file which contains the appropriate briefing data.
-
-if (_unitfaction == "bis_un") exitwith {
-
-#include "f\common\f_briefing_un.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-
-// ====================================================================================
-
-// BRIEFING: CZECH REPUBPLIC
-// The following block of code executes only if the player is in a CZECH REPUBPLIC slot; it 
-// automatically includes a file which contains the appropriate briefing data.
-
-if (_unitfaction == "bis_cz") exitwith {
-
-#include "f\common\f_briefing_cz.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-
-// ====================================================================================
-
-// BRIEFING: GERMAN
-// The following block of code executes only if the player is in a GERMAN slot; it 
-// automatically includes a file which contains the appropriate briefing data.
-
-if (_unitfaction == "bis_ger") exitwith {
-
-#include "f\common\f_briefing_ger.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-
-// ====================================================================================
-
-// BRIEFING: CIVILIAN (TAKISTANI)
-// The following block of code executes only if the player is in a CIVILIAN (TAKISTANI) slot; it 
-// automatically includes a file which contains the appropriate briefing data.
-
-if (_unitfaction == "bis_tk_civ") exitwith {
-
-#include "f\common\f_briefing_tk_civ.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-
-// ====================================================================================
-
-// BRIEFING: CIVILIAN (SPECIAL)
-// The following block of code executes only if the player is in a CIVILIAN (SPECIAL) slot; it 
-// automatically includes a file which contains the appropriate briefing data.
-
-if (_unitfaction == "bis_civ_special") exitwith {
-
-#include "f\common\f_briefing_civ_special.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-
-// ====================================================================================
-
-// ARMA 2 FACTIONS
-// Briefings for the ArmA 2 Vanilla factions
-
-// ====================================================================================
-
-// RUSSIA
-
-if (_unitfaction == "ru") exitwith {
-
-#include "f\common\f_briefing_ru.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-
-// ====================================================================================
-
-// OPFOR INSURGENTS
-
-if (_unitfaction == "ins") exitwith {
-
-#include "f\common\f_briefing_ins.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-
-// ====================================================================================
-
-// USMC
-
-if (_unitfaction == "usmc") exitwith {
-
-#include "f\common\f_briefing_usmc.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-
-// ====================================================================================
-
-// CDF
-
-if (_unitfaction == "cdf") exitwith {
-
-#include "f\common\f_briefing_cdf.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-
-// ====================================================================================
-
-// NAPA
-
-if (_unitfaction == "gue") exitwith {
-
-#include "f\common\f_briefing_gue.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-// ====================================================================================
 
 // ERROR CHECKING
-// If the faction of the unit cannot be defined, the script exits with an error.
+// If the side of the unit cannot be defined, the script exits with an error.
 
-player globalchat format ["DEBUG (briefing.sqf): Faction %1 is not defined.",_unitfaction];
+player globalchat format ["DEBUG (briefing.sqf): side %1 is not defined.",_unitside];

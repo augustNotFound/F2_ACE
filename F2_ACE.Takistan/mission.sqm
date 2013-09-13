@@ -6,8 +6,6 @@ class Mission
 		"cacharacters_e",
 		"takistan",
 		"ca_modules_functions",
-		"ca_missions_battlefieldclearance",
-		"ca_missions_alternativeinjurysimulation",
 		"CACharacters_BAF",
 		"cawheeled_e_stryker",
 		"CATracked_E",
@@ -39,17 +37,30 @@ class Mission
 		"caweapons_baf",
 		"CAWheeled2_V3S",
 		"CAWheeled2_MTVR",
-		"CAWheeled2_Kamaz"
+		"CAWheeled2_Kamaz",
+		"ace_sys_viewblock",
+		"ace_sys_aitalk",
+		"ace_sys_vehicledamage",
+		"ace_sys_repair",
+		"ace_sys_tracking",
+		"ace_sys_wounds",
+		"ace_c_men",
+		"acex_ru_c_men"
 	};
 	addOnsAuto[]=
 	{
 		"cacharacters_e",
 		"ca_modules_functions",
+		"ace_c_men",
 		"cacharacters_pmc",
 		"CACharacters_BAF",
 		"cacharacters2",
-		"ca_missions_battlefieldclearance",
-		"ca_missions_alternativeinjurysimulation",
+		"ace_sys_viewblock",
+		"ace_sys_aitalk",
+		"ace_sys_vehicledamage",
+		"ace_sys_repair",
+		"ace_sys_wounds",
+		"acex_ru_c_men",
 		"CATracked_E",
 		"CATracked",
 		"caair_e_mi8",
@@ -92,7 +103,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=328;
+		items=343;
 		class Item0
 		{
 			side="WEST";
@@ -198,12 +209,12 @@ class Mission
 					azimut=0.32468101;
 					id=5;
 					side="GUER";
-					vehicle="Soldier_Medic_PMC";
+					vehicle="ACE_UN_CDF_Medic_EP1";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitUN_CO_M";
 					init="GrpUN_CO = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="UN Exchange Medic (PMC)";
+					description="UN Medic";
 				};
 			};
 		};
@@ -234,12 +245,12 @@ class Mission
 					azimut=0.32468101;
 					id=7;
 					side="GUER";
-					vehicle="Soldier_Medic_PMC";
+					vehicle="ACE_UN_CDF_Medic_EP1";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitUN_DC_M";
 					init="GrpUN_DC = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="UN Exchange Medic (PMC)";
+					description="UN Medic";
 				};
 			};
 		};
@@ -270,12 +281,12 @@ class Mission
 					azimut=0.32468101;
 					id=33;
 					side="GUER";
-					vehicle="Soldier_Medic_PMC";
+					vehicle="ACE_UN_CDF_Medic_EP1";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitUN_ASL_M";
 					init="GrpUN_ASL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="UN Exchange Medic (PMC, No Markers)";
+					description="UN Alpha Medic";
 				};
 			};
 		};
@@ -840,12 +851,12 @@ class Mission
 					azimut=0.32468101;
 					id=43;
 					side="GUER";
-					vehicle="Soldier_Medic_PMC";
+					vehicle="ACE_UN_CDF_Medic_EP1";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitUN_BSL_M";
 					init="GrpUN_BSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="UN Exchange Medic (PMC, No Markers)";
+					description="UN Bravo Medic";
 				};
 			};
 		};
@@ -1062,12 +1073,12 @@ class Mission
 					azimut=0.32468101;
 					id=57;
 					side="GUER";
-					vehicle="Soldier_Medic_PMC";
+					vehicle="ACE_UN_CDF_Medic_EP1";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitUN_CSL_M";
 					init="GrpUN_CSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="UN Exchange Medic (PMC, No Markers)";
+					description="UN Charlie Medic";
 				};
 			};
 		};
@@ -1298,7 +1309,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={442.89819,630.87866,331.21686};
@@ -1327,6 +1338,19 @@ class Mission
 					init="GrpUN_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
 					description="UN Heavy MG Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={441.33255,631.49695,328.3479};
+					azimut=0.32468101;
+					id=1210;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_AMG_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUN_HMG1_AC";
+					init="GrpUN_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="UN Heavy MG Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item28
@@ -1334,7 +1358,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={443.61389,630.74683,315.96686};
@@ -1363,6 +1387,19 @@ class Mission
 					init="GrpUN_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="UN Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={441.94315,631.44244,312.99286};
+					azimut=0.32468101;
+					id=1211;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUN_MAT1_AC";
+					init="GrpUN_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="UN Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item29
@@ -1370,7 +1407,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={443.18674,630.96808,303.03607};
@@ -1399,6 +1436,19 @@ class Mission
 					init="GrpUN_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="UN Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={441.50327,631.78705,299.26913};
+					azimut=0.32468101;
+					id=1212;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUN_HAT1_AC";
+					init="GrpUN_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="UN Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item30
@@ -1406,7 +1456,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={442.53162,631.13165,290.05219};
@@ -1434,6 +1484,19 @@ class Mission
 					text="UnitUN_SAM1_AG";
 					init="GrpUN_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="UN SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={440.90381,631.52576,287.0965};
+					azimut=0.32468101;
+					id=1213;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUN_SAM1_AC";
+					init="GrpUN_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="UN SAM Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -1478,7 +1541,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={461.61804,622.12103,331.31964};
@@ -1506,6 +1569,19 @@ class Mission
 					text="UnitUN_MTR1_AG";
 					init="GrpUN_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
 					description="UN Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={460.26947,622.76538,328.4256};
+					azimut=0.32468101;
+					id=1209;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUN_MTR1_AC";
+					init="GrpUN_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="UN Mortar Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -1865,7 +1941,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this;";
 					description="UN RESERVED FOR JIP";
 				};
 				class Item1
@@ -1877,7 +1953,7 @@ class Mission
 					vehicle="UN_CDF_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this;";
 					description="UN RESERVED FOR JIP";
 				};
 				class Item2
@@ -1889,7 +1965,7 @@ class Mission
 					vehicle="UN_CDF_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this;";
 					description="UN RESERVED FOR JIP";
 				};
 				class Item3
@@ -1901,7 +1977,7 @@ class Mission
 					vehicle="UN_CDF_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this;";
 					description="UN RESERVED FOR JIP";
 				};
 				class Item4
@@ -1913,7 +1989,7 @@ class Mission
 					vehicle="UN_CDF_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this;";
 					description="UN RESERVED FOR JIP";
 				};
 				class Item5
@@ -1925,7 +2001,7 @@ class Mission
 					vehicle="UN_CDF_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this;";
 					description="UN RESERVED FOR JIP";
 				};
 				class Item6
@@ -1937,7 +2013,7 @@ class Mission
 					vehicle="UN_CDF_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this;";
 					description="UN RESERVED FOR JIP";
 				};
 				class Item7
@@ -1949,7 +2025,7 @@ class Mission
 					vehicle="UN_CDF_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this;";
 					description="UN RESERVED FOR JIP";
 				};
 				class Item8
@@ -1961,7 +2037,7 @@ class Mission
 					vehicle="UN_CDF_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this;";
 					description="UN RESERVED FOR JIP";
 				};
 				class Item9
@@ -1973,7 +2049,7 @@ class Mission
 					vehicle="UN_CDF_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUN_JIP = group this;";
 					description="UN RESERVED FOR JIP";
 				};
 			};
@@ -2771,7 +2847,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={460.34106,577.46631,51.489624};
@@ -2800,6 +2876,19 @@ class Mission
 					init="GrpGue_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
 					description="TK Local Heavy MG Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={458.66882,577.0614,49.013733};
+					azimut=0.32468101;
+					id=1205;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_4_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitGue_HMG1_AC";
+					init="GrpGue_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="TK Local Heavy MG Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item58
@@ -2807,7 +2896,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={459.68927,576.8656,37.994446};
@@ -2836,6 +2925,19 @@ class Mission
 					init="GrpGue_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="TK Local Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={458.49704,576.68048,35.668793};
+					azimut=0.32468101;
+					id=1206;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_4_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitGue_MAT1_AC";
+					init="GrpGue_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="TK Local Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item59
@@ -2843,7 +2945,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={461.4892,577.03265,24.568359};
@@ -2872,6 +2974,19 @@ class Mission
 					init="GrpGue_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="TK Local Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={459.4032,576.59253,21.826202};
+					azimut=0.32468101;
+					id=1207;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_4_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitGue_HAT1_AC";
+					init="GrpGue_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="TK Local Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item60
@@ -2879,7 +2994,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={460.34296,576.49597,15.690369};
@@ -2907,6 +3022,19 @@ class Mission
 					text="UnitGue_SAM1_AG";
 					init="GrpGue_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="UN SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={459.03644,576.19287,13.175476};
+					azimut=0.32468101;
+					id=1208;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_4_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitGue_SAM1_AC";
+					init="GrpGue_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="UN SAM Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -2951,7 +3079,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={481.66443,580.25977,49.734619};
@@ -2979,6 +3107,19 @@ class Mission
 					text="UnitGue_MTR1_AG";
 					init="GrpGue_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
 					description="TK Local Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={480.16788,580.03845,47.454285};
+					azimut=0.32468101;
+					id=1204;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_2_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitGue_MTR1_AC";
+					init="GrpGue_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="TK Local Mortar Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -3338,7 +3479,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this;";
 					description="TK Local RESERVED FOR JIP";
 				};
 				class Item1
@@ -3350,7 +3491,7 @@ class Mission
 					vehicle="TK_GUE_Soldier_3_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this;";
 					description="TK Local RESERVED FOR JIP";
 				};
 				class Item2
@@ -3362,7 +3503,7 @@ class Mission
 					vehicle="TK_GUE_Soldier_3_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this;";
 					description="TK Local RESERVED FOR JIP";
 				};
 				class Item3
@@ -3374,7 +3515,7 @@ class Mission
 					vehicle="TK_GUE_Soldier_3_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this;";
 					description="TK Local RESERVED FOR JIP";
 				};
 				class Item4
@@ -3386,7 +3527,7 @@ class Mission
 					vehicle="TK_GUE_Soldier_3_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this;";
 					description="TK Local RESERVED FOR JIP";
 				};
 				class Item5
@@ -3398,7 +3539,7 @@ class Mission
 					vehicle="TK_GUE_Soldier_3_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this;";
 					description="TK Local RESERVED FOR JIP";
 				};
 				class Item6
@@ -3410,7 +3551,7 @@ class Mission
 					vehicle="TK_GUE_Soldier_3_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this;";
 					description="TK Local RESERVED FOR JIP";
 				};
 				class Item7
@@ -3422,7 +3563,7 @@ class Mission
 					vehicle="TK_GUE_Soldier_3_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this;";
 					description="TK Local RESERVED FOR JIP";
 				};
 				class Item8
@@ -3434,7 +3575,7 @@ class Mission
 					vehicle="TK_GUE_Soldier_3_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this;";
 					description="TK Local RESERVED FOR JIP";
 				};
 				class Item9
@@ -3446,7 +3587,7 @@ class Mission
 					vehicle="TK_GUE_Soldier_3_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpGue_JIP = group this;";
 					description="TK Local RESERVED FOR JIP";
 				};
 			};
@@ -4070,7 +4211,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={705.59192,574.98059,61.5224};
@@ -4088,7 +4229,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={708.76727,573.89014,59.004944};
+					position[]={709.17761,573.7644,59.020203};
 					azimut=1.4615065;
 					id=257;
 					side="WEST";
@@ -4099,6 +4240,19 @@ class Mission
 					init="GrpUS_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
 					description="US Army Heavy MG Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={703.7644,575.25317,58.654755};
+					azimut=1.4615099;
+					id=1171;
+					side="WEST";
+					vehicle="US_Soldier_AMG_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUS_HMG1_AC";
+					init="GrpUS_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="US Army Heavy MG Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item84
@@ -4106,7 +4260,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={705.01611,572.64124,47.078552};
@@ -4135,6 +4289,19 @@ class Mission
 					init="GrpUS_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="US Army Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={703.68506,572.28693,44.38269};
+					azimut=1.4615099;
+					id=1172;
+					side="WEST";
+					vehicle="US_Soldier_AAT_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUS_MAT1_AC";
+					init="GrpUS_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="US Army Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item85
@@ -4142,7 +4309,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={705.16461,568.24371,35.115295};
@@ -4171,6 +4338,19 @@ class Mission
 					init="GrpUS_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="US Army Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={702.91046,567.7912,32.179993};
+					azimut=1.4615099;
+					id=1173;
+					side="WEST";
+					vehicle="US_Soldier_AHAT_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUS_HAT1_AC";
+					init="GrpUS_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="US Army Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item86
@@ -4178,7 +4358,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={703.49243,563.56042,21.644409};
@@ -4206,6 +4386,19 @@ class Mission
 					text="UnitUS_SAM1_AG";
 					init="GrpUS_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="US Army SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={701.64752,563.23834,19.129028};
+					azimut=1.4615099;
+					id=1174;
+					side="WEST";
+					vehicle="US_Soldier_AAT_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUS_SAM1_AC";
+					init="GrpUS_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="US Army SAM Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -4250,7 +4443,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={721.51825,569.91638,60.341858};
@@ -4278,6 +4471,19 @@ class Mission
 					text="UnitUS_MTR1_AG";
 					init="GrpUS_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
 					description="US Army Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={719.76593,570.19025,57.496552};
+					azimut=1.4615099;
+					id=1175;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUS_MTR1_AC";
+					init="GrpUS_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="US Army Mortar Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -4637,7 +4843,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this;";
 					description="US Army RESERVED FOR JIP";
 				};
 				class Item1
@@ -4649,7 +4855,7 @@ class Mission
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this;";
 					description="US Army RESERVED FOR JIP";
 				};
 				class Item2
@@ -4661,7 +4867,7 @@ class Mission
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this;";
 					description="US Army RESERVED FOR JIP";
 				};
 				class Item3
@@ -4673,7 +4879,7 @@ class Mission
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this;";
 					description="US Army RESERVED FOR JIP";
 				};
 				class Item4
@@ -4685,7 +4891,7 @@ class Mission
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this;";
 					description="US Army RESERVED FOR JIP";
 				};
 				class Item5
@@ -4697,7 +4903,7 @@ class Mission
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this;";
 					description="US Army RESERVED FOR JIP";
 				};
 				class Item6
@@ -4709,7 +4915,7 @@ class Mission
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this;";
 					description="US Army RESERVED FOR JIP";
 				};
 				class Item7
@@ -4721,7 +4927,7 @@ class Mission
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this;";
 					description="US Army RESERVED FOR JIP";
 				};
 				class Item8
@@ -4733,7 +4939,7 @@ class Mission
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this;";
 					description="US Army RESERVED FOR JIP";
 				};
 				class Item9
@@ -4745,7 +4951,7 @@ class Mission
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUS_JIP = group this;";
 					description="US Army RESERVED FOR JIP";
 				};
 			};
@@ -5543,7 +5749,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={696.42896,529.03186,333.13422};
@@ -5572,6 +5778,19 @@ class Mission
 					init="GrpBAF_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
 					description="British Army Heavy MG Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={694.23541,529.08356,330.4989};
+					azimut=0.32468101;
+					id=1166;
+					side="WEST";
+					vehicle="BAF_Soldier_AMG_MTP";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitBAF_HMG1_AC";
+					init="GrpBAF_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="British Army Heavy MG Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item114
@@ -5579,7 +5798,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={695.9317,529.24414,317.40778};
@@ -5608,6 +5827,19 @@ class Mission
 					init="GrpBAF_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="British Army Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={693.42804,529.51727,314.66946};
+					azimut=0.32468101;
+					id=1167;
+					side="WEST";
+					vehicle="BAF_Soldier_AAT_MTP";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitBAF_MAT1_AC";
+					init="GrpBAF_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="British Army Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item115
@@ -5615,7 +5847,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={696.54944,529.44287,305.81244};
@@ -5644,6 +5876,19 @@ class Mission
 					init="GrpBAF_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="British Army Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={693.42578,529.62659,303.12537};
+					azimut=0.32468101;
+					id=1168;
+					side="WEST";
+					vehicle="BAF_Soldier_AHAT_MTP";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitBAF_HAT1_AC";
+					init="GrpBAF_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="British Army Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item116
@@ -5651,7 +5896,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={695.46783,529.78436,293.45062};
@@ -5679,6 +5924,19 @@ class Mission
 					text="UnitBAF_SAM1_AG";
 					init="GrpBAF_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="British Army SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={693.22235,530.03735,290.86554};
+					azimut=0.32468101;
+					id=1169;
+					side="WEST";
+					vehicle="BAF_Soldier_AAA_MTP";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitBAF_SAM1_AC";
+					init="GrpBAF_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="British Army SAM Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -5723,7 +5981,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={711.56934,528.53668,332.35773};
@@ -5741,7 +5999,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={714.38824,528.3277,330.0318};
+					position[]={713.78058,528.36664,330.19125};
 					azimut=0.32468101;
 					id=364;
 					side="WEST";
@@ -5751,6 +6009,19 @@ class Mission
 					text="UnitBAF_MTR1_AG";
 					init="GrpBAF_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
 					description="British Army Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={709.78223,528.49451,330.02036};
+					azimut=0.32468101;
+					id=1170;
+					side="WEST";
+					vehicle="BAF_Soldier_MTP";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitBAF_MTR1_AC";
+					init="GrpBAF_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="British Army Mortar Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -6110,7 +6381,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this;";
 					description="British Army RESERVED FOR JIP";
 				};
 				class Item1
@@ -6122,7 +6393,7 @@ class Mission
 					vehicle="BAF_Soldier_MTP";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this;";
 					description="British Army RESERVED FOR JIP";
 				};
 				class Item2
@@ -6134,7 +6405,7 @@ class Mission
 					vehicle="BAF_Soldier_MTP";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this;";
 					description="British Army RESERVED FOR JIP";
 				};
 				class Item3
@@ -6146,7 +6417,7 @@ class Mission
 					vehicle="BAF_Soldier_MTP";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this;";
 					description="British Army RESERVED FOR JIP";
 				};
 				class Item4
@@ -6158,7 +6429,7 @@ class Mission
 					vehicle="BAF_Soldier_MTP";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this;";
 					description="British Army RESERVED FOR JIP";
 				};
 				class Item5
@@ -6170,7 +6441,7 @@ class Mission
 					vehicle="BAF_Soldier_MTP";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this;";
 					description="British Army RESERVED FOR JIP";
 				};
 				class Item6
@@ -6182,7 +6453,7 @@ class Mission
 					vehicle="BAF_Soldier_MTP";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this;";
 					description="British Army RESERVED FOR JIP";
 				};
 				class Item7
@@ -6194,7 +6465,7 @@ class Mission
 					vehicle="BAF_Soldier_MTP";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this;";
 					description="British Army RESERVED FOR JIP";
 				};
 				class Item8
@@ -6206,7 +6477,7 @@ class Mission
 					vehicle="BAF_Soldier_MTP";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this;";
 					description="British Army RESERVED FOR JIP";
 				};
 				class Item9
@@ -6218,7 +6489,7 @@ class Mission
 					vehicle="BAF_Soldier_MTP";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this;";
 					description="British Army RESERVED FOR JIP";
 				};
 			};
@@ -6842,7 +7113,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={955.89691,508.57266,346.40268};
@@ -6871,6 +7142,19 @@ class Mission
 					init="GrpTK_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
 					description="TK Army Heavy MG Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={954.58875,507.35815,344.16046};
+					azimut=0.32468101;
+					id=1194;
+					side="EAST";
+					vehicle="TK_Soldier_AMG_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitTK_HMG1_AC";
+					init="GrpTK_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="TK Army Heavy MG Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item140
@@ -6878,7 +7162,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={955.99261,503.16269,332.26019};
@@ -6907,6 +7191,19 @@ class Mission
 					init="GrpTK_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="TK Army Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={954.10126,502.05936,330.138};
+					azimut=0.32468101;
+					id=1195;
+					side="EAST";
+					vehicle="TK_Soldier_HAT_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitTK_MAT1_AC";
+					init="GrpTK_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="TK Army Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item141
@@ -6914,7 +7211,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={955.10211,499.03098,321.42896};
@@ -6943,6 +7240,19 @@ class Mission
 					init="GrpTK_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="TK Army Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={953.54462,498.06183,319.25427};
+					azimut=0.32468101;
+					id=1196;
+					side="EAST";
+					vehicle="TK_Soldier_HAT_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitTK_HAT1_AC";
+					init="GrpTK_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="TK Army Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item142
@@ -6950,7 +7260,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={954.05878,495.20557,310.38135};
@@ -6978,6 +7288,19 @@ class Mission
 					text="UnitTK_SAM1_AG";
 					init="GrpTK_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="TK Army SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={953.23334,494.48602,308.3497};
+					azimut=0.32468101;
+					id=1197;
+					side="EAST";
+					vehicle="TK_Soldier_AA_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitTK_SAM1_AC";
+					init="GrpTK_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="TK Army SAM Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -7022,7 +7345,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={969.8111,512.79803,346.05331};
@@ -7050,6 +7373,19 @@ class Mission
 					text="UnitTK_MTR1_AG";
 					init="GrpTK_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
 					description="TK Army Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={968.56726,511.50818,344.14908};
+					azimut=0.32468101;
+					id=1198;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitTK_MTR1_AC";
+					init="GrpTK_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="TK Army Mortar Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -7409,7 +7745,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Army RESERVED FOR JIP";
 				};
 				class Item1
@@ -7421,7 +7757,7 @@ class Mission
 					vehicle="TK_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Army RESERVED FOR JIP";
 				};
 				class Item2
@@ -7433,7 +7769,7 @@ class Mission
 					vehicle="TK_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Army RESERVED FOR JIP";
 				};
 				class Item3
@@ -7445,7 +7781,7 @@ class Mission
 					vehicle="TK_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Army RESERVED FOR JIP";
 				};
 				class Item4
@@ -7457,7 +7793,7 @@ class Mission
 					vehicle="TK_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Army RESERVED FOR JIP";
 				};
 				class Item5
@@ -7469,7 +7805,7 @@ class Mission
 					vehicle="TK_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Army RESERVED FOR JIP";
 				};
 				class Item6
@@ -7481,7 +7817,7 @@ class Mission
 					vehicle="TK_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Army RESERVED FOR JIP";
 				};
 				class Item7
@@ -7493,7 +7829,7 @@ class Mission
 					vehicle="TK_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Army RESERVED FOR JIP";
 				};
 				class Item8
@@ -7505,7 +7841,7 @@ class Mission
 					vehicle="TK_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Army RESERVED FOR JIP";
 				};
 				class Item9
@@ -7517,7 +7853,7 @@ class Mission
 					vehicle="TK_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Army RESERVED FOR JIP";
 				};
 			};
@@ -8315,7 +8651,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={939.68243,476.9798,69.421387};
@@ -8337,12 +8673,25 @@ class Mission
 					azimut=0.32468101;
 					id=538;
 					side="EAST";
-					vehicle="TK_INS_Soldier_MG_EP1";
+					vehicle="TK_INS_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitIns_HMG1_AG";
 					init="GrpIns_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
 					description="TK Militia Heavy MG Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={937.62482,476.82257,66.342407};
+					azimut=0.32468101;
+					id=1199;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitIns_HMG1_AC";
+					init="GrpIns_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="TK Militia Heavy MG Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -8351,7 +8700,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={939.29108,472.53171,54.672974};
@@ -8380,6 +8729,19 @@ class Mission
 					init="GrpIns_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="TK Militia Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={937.71735,472.11087,51.564117};
+					azimut=0.32468101;
+					id=1200;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AAT_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitIns_MAT1_AC";
+					init="GrpIns_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="TK Militia Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item171
@@ -8387,7 +8749,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={938.67853,469.61914,41.911133};
@@ -8416,6 +8778,19 @@ class Mission
 					init="GrpIns_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="TK Militia Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={937.55347,469.40179,39.010895};
+					azimut=0.32468101;
+					id=1201;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AAT_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitIns_HAT1_AC";
+					init="GrpIns_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="TK Militia Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item172
@@ -8423,7 +8798,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={938.81989,467.47742,29.25827};
@@ -8451,6 +8826,19 @@ class Mission
 					text="UnitIns_SAM1_AG";
 					init="GrpIns_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="TK Militia SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={937.24731,467.4519,26.288727};
+					azimut=0.32468101;
+					id=1202;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AAT_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitIns_SAM1_AC";
+					init="GrpIns_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="TK Militia SAM Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -8495,7 +8883,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={960.80548,469.17255,69.354126};
@@ -8523,6 +8911,19 @@ class Mission
 					text="UnitIns_MTR1_AG";
 					init="GrpIns_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
 					description="TK Militia Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={959.25427,469.11462,66.448608};
+					azimut=0.32468101;
+					id=1203;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitIns_MTR1_AC";
+					init="GrpIns_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="TK Militia Mortar Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -8882,7 +9283,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Militia RESERVED FOR JIP";
 				};
 				class Item1
@@ -8894,7 +9295,7 @@ class Mission
 					vehicle="TK_INS_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Militia RESERVED FOR JIP";
 				};
 				class Item2
@@ -8906,7 +9307,7 @@ class Mission
 					vehicle="TK_INS_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Militia RESERVED FOR JIP";
 				};
 				class Item3
@@ -8918,7 +9319,7 @@ class Mission
 					vehicle="TK_INS_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Militia RESERVED FOR JIP";
 				};
 				class Item4
@@ -8930,7 +9331,7 @@ class Mission
 					vehicle="TK_INS_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Militia RESERVED FOR JIP";
 				};
 				class Item5
@@ -8942,7 +9343,7 @@ class Mission
 					vehicle="TK_INS_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Militia RESERVED FOR JIP";
 				};
 				class Item6
@@ -8954,7 +9355,7 @@ class Mission
 					vehicle="TK_INS_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Militia RESERVED FOR JIP";
 				};
 				class Item7
@@ -8966,7 +9367,7 @@ class Mission
 					vehicle="TK_INS_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Militia RESERVED FOR JIP";
 				};
 				class Item8
@@ -8978,7 +9379,7 @@ class Mission
 					vehicle="TK_INS_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Militia RESERVED FOR JIP";
 				};
 				class Item9
@@ -8990,7 +9391,7 @@ class Mission
 					vehicle="TK_INS_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpTK_JIP = group this;";
 					description="TK Militia RESERVED FOR JIP";
 				};
 			};
@@ -9755,7 +10156,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={888.88934,499.56998,910.25146};
+					position[]={890.58508,499.52969,911.5813};
 					azimut=1.6846207;
 					id=632;
 					side="EAST";
@@ -9788,10 +10189,10 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
-					position[]={889.13568,505.11554,898.94238};
+					position[]={890.28143,504.73108,900.59338};
 					azimut=-5.8838906;
 					id=634;
 					side="EAST";
@@ -9817,6 +10218,19 @@ class Mission
 					init="GrpRU_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="Russian Army Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={889.19696,505.10345,899.01312};
+					azimut=-5.8838902;
+					id=1176;
+					side="EAST";
+					vehicle="RU_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitRU_MAT1_AC";
+					init="GrpRU_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="Russian Army Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item200
@@ -9824,10 +10238,10 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
-					position[]={888.85101,511.01544,886.4856};
+					position[]={890.36353,510.78531,888.1358};
 					azimut=-2.5663855;
 					id=636;
 					side="EAST";
@@ -9853,6 +10267,19 @@ class Mission
 					init="GrpRU_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="Russian Army Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={889.36151,511.35626,886.13025};
+					azimut=-2.56639;
+					id=1177;
+					side="EAST";
+					vehicle="RU_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitRU_HAT1_AC";
+					init="GrpRU_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="Russian Army Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item201
@@ -9860,10 +10287,10 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
-					position[]={889.05841,515.8429,875.18018};
+					position[]={890.37268,515.84674,876.49548};
 					azimut=-5.8838906;
 					id=638;
 					side="EAST";
@@ -9889,6 +10316,19 @@ class Mission
 					init="GrpRU_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="Russian Army SAM Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={888.88562,515.78436,875.15063};
+					azimut=-5.8838902;
+					id=1178;
+					side="EAST";
+					vehicle="RU_Soldier_AA";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitRU_SAM1_AC";
+					init="GrpRU_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="Russian Army SAM Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item202
@@ -9899,7 +10339,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={888.87543,519.55768,865.31445};
+					position[]={890.43481,519.6037,866.70752};
 					azimut=0.89087355;
 					id=640;
 					side="EAST";
@@ -10247,7 +10687,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this;";
 					description="Russian Army RESERVED FOR JIP";
 				};
 				class Item1
@@ -10259,7 +10699,7 @@ class Mission
 					vehicle="RU_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this;";
 					description="Russian Army RESERVED FOR JIP";
 				};
 				class Item2
@@ -10271,7 +10711,7 @@ class Mission
 					vehicle="RU_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this;";
 					description="Russian Army RESERVED FOR JIP";
 				};
 				class Item3
@@ -10283,7 +10723,7 @@ class Mission
 					vehicle="RU_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this;";
 					description="Russian Army RESERVED FOR JIP";
 				};
 				class Item4
@@ -10295,7 +10735,7 @@ class Mission
 					vehicle="RU_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this;";
 					description="Russian Army RESERVED FOR JIP";
 				};
 				class Item5
@@ -10307,7 +10747,7 @@ class Mission
 					vehicle="RU_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this;";
 					description="Russian Army RESERVED FOR JIP";
 				};
 				class Item6
@@ -10319,7 +10759,7 @@ class Mission
 					vehicle="RU_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this;";
 					description="Russian Army RESERVED FOR JIP";
 				};
 				class Item7
@@ -10331,7 +10771,7 @@ class Mission
 					vehicle="RU_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this;";
 					description="Russian Army RESERVED FOR JIP";
 				};
 				class Item8
@@ -10343,7 +10783,7 @@ class Mission
 					vehicle="RU_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this;";
 					description="Russian Army RESERVED FOR JIP";
 				};
 				class Item9
@@ -10355,7 +10795,7 @@ class Mission
 					vehicle="RU_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpRU_JIP = group this;";
 					description="Russian Army RESERVED FOR JIP";
 				};
 			};
@@ -11153,7 +11593,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={642.98389,598.17316,625.68726};
@@ -11182,6 +11622,19 @@ class Mission
 					init="GrpCDF_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="CDF Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={640.76794,598.39246,623.01538};
+					azimut=0.59491402;
+					id=1154;
+					side="WEST";
+					vehicle="CDF_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitCDF_MAT1_AC";
+					init="GrpCDF_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="CDF Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item227
@@ -11189,7 +11642,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={642.65363,598.96838,613.30322};
@@ -11218,6 +11671,19 @@ class Mission
 					init="GrpCDF_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="CDF Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={640.49139,599.0647,611.35089};
+					azimut=0.59491402;
+					id=1155;
+					side="WEST";
+					vehicle="CDF_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitCDF_HAT1_AC";
+					init="GrpCDF_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="CDF Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item228
@@ -11225,7 +11691,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={642.59198,598.0199,601.86426};
@@ -11253,6 +11719,19 @@ class Mission
 					text="UnitCDF_SAM1_AG";
 					init="GrpCDF_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="CDF SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={640.89691,598.01056,599.80701};
+					azimut=0.59491402;
+					id=1156;
+					side="WEST";
+					vehicle="CDF_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitCDF_SAM1_AC";
+					init="GrpCDF_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="CDF SAM Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -11640,123 +12119,123 @@ class Mission
 				items=10;
 				class Item0
 				{
-					position[]={663.00885,595.82739,622.33813};
-					azimut=-4.8891091;
+					position[]={659.93921,596.10327,611.3031};
+					azimut=2.8852298;
 					id=753;
 					side="WEST";
 					vehicle="CDF_Soldier";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this;";
 					description="CDF RESERVED FOR JIP";
 				};
 				class Item1
 				{
-					position[]={666.49597,594.88171,622.71094};
-					azimut=-4.8891091;
+					position[]={663.44482,595.13483,611.20056};
+					azimut=2.8852298;
 					id=754;
 					side="WEST";
 					vehicle="CDF_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this;";
 					description="CDF RESERVED FOR JIP";
 				};
 				class Item2
 				{
-					position[]={669.54181,594.06439,623.02222};
-					azimut=-4.8891091;
+					position[]={666.50458,594.17194,611.09717};
+					azimut=2.8852298;
 					id=755;
 					side="WEST";
 					vehicle="CDF_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this;";
 					description="CDF RESERVED FOR JIP";
 				};
 				class Item3
 				{
-					position[]={672.69299,593.11383,623.34253};
-					azimut=-4.8891091;
+					position[]={669.67017,593.14691,610.98822};
+					azimut=2.8852298;
 					id=756;
 					side="WEST";
 					vehicle="CDF_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this;";
 					description="CDF RESERVED FOR JIP";
 				};
 				class Item4
 				{
-					position[]={663.89056,595.49231,618.43896};
-					azimut=-4.8891091;
+					position[]={660.28528,595.31421,607.32037};
+					azimut=2.8852298;
 					id=757;
 					side="WEST";
 					vehicle="CDF_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this;";
 					description="CDF RESERVED FOR JIP";
 				};
 				class Item5
 				{
-					position[]={666.93524,594.63977,618.75073};
-					azimut=-4.8891091;
+					position[]={663.34424,594.44562,607.21747};
+					azimut=2.8852298;
 					id=758;
 					side="WEST";
 					vehicle="CDF_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this;";
 					description="CDF RESERVED FOR JIP";
 				};
 				class Item6
 				{
-					position[]={670.08533,593.71771,619.06958};
-					azimut=-4.8891091;
+					position[]={666.50842,593.45361,607.10706};
+					azimut=2.8852298;
 					id=759;
 					side="WEST";
 					vehicle="CDF_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this;";
 					description="CDF RESERVED FOR JIP";
 				};
 				class Item7
 				{
-					position[]={673.24347,592.74213,619.28784};
-					azimut=-4.8891091;
+					position[]={669.66711,592.41473,606.8963};
+					azimut=2.8852298;
 					id=760;
 					side="WEST";
 					vehicle="CDF_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this;";
 					description="CDF RESERVED FOR JIP";
 				};
 				class Item8
 				{
-					position[]={676.54919,591.99939,624.24707};
-					azimut=-4.8891091;
+					position[]={673.6131,591.97198,611.36261};
+					azimut=2.8852298;
 					id=761;
 					side="WEST";
 					vehicle="CDF_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this;";
 					description="CDF RESERVED FOR JIP";
 				};
 				class Item9
 				{
-					position[]={677.09912,591.61139,620.19214};
-					azimut=-4.8891091;
+					position[]={673.60962,591.14453,607.27075};
+					azimut=2.8852298;
 					id=762;
 					side="WEST";
 					vehicle="CDF_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpCDF_JIP = group this;";
 					description="CDF RESERVED FOR JIP";
 				};
 			};
@@ -12521,7 +13000,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={633.2135,484.99194,892.40747};
+					position[]={632.01648,484.95798,892.52728};
 					azimut=1.4615065;
 					id=816;
 					side="WEST";
@@ -12536,11 +13015,11 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={636.3891,485.69263,889.88989};
-					azimut=1.4615065;
+					position[]={635.19208,485.66599,890.0097};
+					azimut=1.4615099;
 					id=817;
 					side="WEST";
-					vehicle="US_Soldier_AMG_EP1";
+					vehicle="USMC_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitUSMC_MMG1_AG";
@@ -12554,10 +13033,10 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
-					position[]={631.90051,488.18869,880.86768};
+					position[]={632.31799,492.42789,866.91504};
 					azimut=1.4615065;
 					id=818;
 					side="WEST";
@@ -12572,7 +13051,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={635.07574,489.06485,878.34985};
+					position[]={635.49323,493.34671,864.39722};
 					azimut=1.4615065;
 					id=819;
 					side="WEST";
@@ -12583,6 +13062,19 @@ class Mission
 					init="GrpUSMC_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="USMC Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={629.86896,493.06998,864.39722};
+					azimut=1.4615099;
+					id=1148;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUSMC_MAT1_AC";
+					init="GrpUSMC_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="USMC Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item255
@@ -12590,10 +13082,10 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
-					position[]={632.04889,491.80905,868.90381};
+					position[]={632.46637,496.13132,854.95117};
 					azimut=1.4615065;
 					id=820;
 					side="WEST";
@@ -12608,7 +13100,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={635.22314,492.72403,866.38672};
+					position[]={635.64063,497.20093,852.43408};
 					azimut=1.4615065;
 					id=821;
 					side="WEST";
@@ -12619,6 +13111,19 @@ class Mission
 					init="GrpUSMC_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="USMC Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={630.66528,496.79852,852.21735};
+					azimut=1.4615099;
+					id=1149;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUSMC_HAT1_AC";
+					init="GrpUSMC_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="USMC Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item256
@@ -12626,10 +13131,10 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
-					position[]={630.37677,495.80246,855.43311};
+					position[]={650.17493,488.12781,881.41882};
 					azimut=1.4615065;
 					id=822;
 					side="WEST";
@@ -12644,7 +13149,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={633.55206,496.86295,852.91602};
+					position[]={653.35022,489.01147,878.90173};
 					azimut=1.4615065;
 					id=823;
 					side="WEST";
@@ -12654,6 +13159,19 @@ class Mission
 					text="UnitUSMC_SAM1_AG";
 					init="GrpUSMC_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="USMC SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={648.38934,489.16269,878.4364};
+					azimut=1.4615099;
+					id=1150;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUSMC_SAM1_AC";
+					init="GrpUSMC_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="USMC SAM Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -13049,7 +13567,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this;";
 					description="USMC RESERVED FOR JIP";
 				};
 				class Item1
@@ -13061,7 +13579,7 @@ class Mission
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this;";
 					description="USMC RESERVED FOR JIP";
 				};
 				class Item2
@@ -13073,7 +13591,7 @@ class Mission
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this;";
 					description="USMC RESERVED FOR JIP";
 				};
 				class Item3
@@ -13085,7 +13603,7 @@ class Mission
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this;";
 					description="USMC RESERVED FOR JIP";
 				};
 				class Item4
@@ -13097,7 +13615,7 @@ class Mission
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this;";
 					description="USMC RESERVED FOR JIP";
 				};
 				class Item5
@@ -13109,7 +13627,7 @@ class Mission
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this;";
 					description="USMC RESERVED FOR JIP";
 				};
 				class Item6
@@ -13121,7 +13639,7 @@ class Mission
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this;";
 					description="USMC RESERVED FOR JIP";
 				};
 				class Item7
@@ -13133,7 +13651,7 @@ class Mission
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this;";
 					description="USMC RESERVED FOR JIP";
 				};
 				class Item8
@@ -13145,7 +13663,7 @@ class Mission
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this;";
 					description="USMC RESERVED FOR JIP";
 				};
 				class Item9
@@ -13157,7 +13675,7 @@ class Mission
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpUSMC_JIP = group this;";
 					description="USMC RESERVED FOR JIP";
 				};
 			};
@@ -13955,7 +14473,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={916.04413,544.25244,607.08813};
@@ -13984,6 +14502,19 @@ class Mission
 					init="GrpA2Ins_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="ChDKZ Insurgents Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={914.53851,543.43915,604.07397};
+					azimut=0.32468101;
+					id=1186;
+					side="EAST";
+					vehicle="Ins_Soldier_2";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2Ins_MAT1_AC";
+					init="GrpA2Ins_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="ChDKZ Insurgents Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item283
@@ -13991,7 +14522,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={915.43158,540.59241,594.3269};
@@ -14020,6 +14551,19 @@ class Mission
 					init="GrpA2Ins_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="ChDKZ Insurgents Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={913.67047,540.02509,591.14929};
+					azimut=0.32468101;
+					id=1187;
+					side="EAST";
+					vehicle="Ins_Soldier_2";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2Ins_HAT1_AC";
+					init="GrpA2Ins_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="ChDKZ Insurgents Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item284
@@ -14027,7 +14571,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={927.8103,551.38763,630.87378};
@@ -14055,6 +14599,19 @@ class Mission
 					text="UnitA2Ins_SAM1_AG";
 					init="GrpA2Ins_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="ChDKZ Insurgents SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={926.65582,550.45764,627.9649};
+					azimut=0.32468101;
+					id=1185;
+					side="EAST";
+					vehicle="Ins_Soldier_2";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2Ins_SAM1_AC";
+					init="GrpA2Ins_SAM1 = group this; nul = [""samac"",this] call f_fnc_assignGear;";
+					description="ChDKZ Insurgents SAM Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -14442,7 +14999,7 @@ class Mission
 				items=10;
 				class Item0
 				{
-					position[]={930.43579,543.59229,607.55493};
+					position[]={920.32623,537.16241,580.44836};
 					azimut=0.32468101;
 					id=939;
 					side="EAST";
@@ -14450,115 +15007,115 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this;";
 					description="ChDKZ Insurgents RESERVED FOR JIP";
 				};
 				class Item1
 				{
-					position[]={932.55078,542.71771,605.00659};
+					position[]={922.44122,536.50977,577.90002};
 					azimut=0.32468101;
 					id=940;
 					side="EAST";
 					vehicle="Ins_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this;";
 					description="ChDKZ Insurgents RESERVED FOR JIP";
 				};
 				class Item2
 				{
-					position[]={934.94727,542.59271,604.948};
+					position[]={924.83771,536.3858,577.84143};
 					azimut=0.32468101;
 					id=941;
 					side="EAST";
 					vehicle="Ins_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this;";
 					description="ChDKZ Insurgents RESERVED FOR JIP";
 				};
 				class Item3
 				{
-					position[]={937.34937,542.49457,604.97949};
+					position[]={927.23981,536.27765,577.87292};
 					azimut=0.32468101;
 					id=942;
 					side="EAST";
 					vehicle="Ins_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this;";
 					description="ChDKZ Insurgents RESERVED FOR JIP";
 				};
 				class Item4
 				{
-					position[]={930.17725,541.75964,601.48779};
+					position[]={920.06769,535.83936,574.38123};
 					azimut=0.32468101;
 					id=943;
 					side="EAST";
 					vehicle="Ins_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this;";
 					description="ChDKZ Insurgents RESERVED FOR JIP";
 				};
 				class Item5
 				{
-					position[]={932.57349,541.63489,601.42871};
+					position[]={922.46393,535.71393,574.32214};
 					azimut=0.32468101;
 					id=944;
 					side="EAST";
 					vehicle="Ins_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this;";
 					description="ChDKZ Insurgents RESERVED FOR JIP";
 				};
 				class Item6
 				{
-					position[]={934.97607,541.54071,601.46045};
+					position[]={924.86652,535.61005,574.35388};
 					azimut=0.32468101;
 					id=945;
 					side="EAST";
 					vehicle="Ins_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this;";
 					description="ChDKZ Insurgents RESERVED FOR JIP";
 				};
 				class Item7
 				{
-					position[]={937.64722,541.39508,601.35376};
+					position[]={927.53766,535.46472,574.24719};
 					azimut=0.32468101;
 					id=946;
 					side="EAST";
 					vehicle="Ins_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this;";
 					description="ChDKZ Insurgents RESERVED FOR JIP";
 				};
 				class Item8
 				{
-					position[]={940.02881,542.3855,604.86377};
+					position[]={929.91925,536.1239,577.7572};
 					azimut=0.32468101;
 					id=947;
 					side="EAST";
 					vehicle="Ins_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this;";
 					description="ChDKZ Insurgents RESERVED FOR JIP";
 				};
 				class Item9
 				{
-					position[]={940.27319,541.29224,601.13745};
+					position[]={930.16364,535.28888,574.03088};
 					azimut=0.32468101;
 					id=948;
 					side="EAST";
 					vehicle="Ins_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Ins_JIP = group this;";
 					description="ChDKZ Insurgents RESERVED FOR JIP";
 				};
 			};
@@ -15356,10 +15913,10 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
-					position[]={416.74219,574.24139,589.60815};
+					position[]={419.03546,573.18536,589.19165};
 					azimut=0.32468101;
 					id=1004;
 					side="GUER";
@@ -15374,7 +15931,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={419.61627,573.78729,587.20874};
+					position[]={421.90955,573.38818,586.79224};
 					azimut=0.32468101;
 					id=1005;
 					side="GUER";
@@ -15385,6 +15942,19 @@ class Mission
 					init="GrpA2Gue_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
 					description="NAPA Medium AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={417.39722,575.02777,586.3078};
+					azimut=0.32468101;
+					id=1214;
+					side="GUER";
+					vehicle="GUE_Soldier_3";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2Gue_MAT1_AC";
+					init="GrpA2Gue_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="NAPA Medium AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item311
@@ -15392,10 +15962,10 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
-					position[]={418.54218,578.50293,576.18237};
+					position[]={418.33368,577.8172,578.0592};
 					azimut=0.32468101;
 					id=1006;
 					side="GUER";
@@ -15410,7 +15980,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={421.4173,578.89197,573.78271};
+					position[]={421.2088,578.14966,575.65955};
 					azimut=0.32468101;
 					id=1007;
 					side="GUER";
@@ -15421,6 +15991,19 @@ class Mission
 					init="GrpA2Gue_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
 					description="NAPA Heavy AT Team 1 Assistant Gunner";
 				};
+				class Item2
+				{
+					position[]={416.67773,579.66699,575.16364};
+					azimut=0.32468101;
+					id=1215;
+					side="GUER";
+					vehicle="GUE_Soldier_3";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2Gue_HAT1_AC";
+					init="GrpA2Gue_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="NAPA Heavy AT Team 1 Ammo Carrier";
+				};
 			};
 		};
 		class Item312
@@ -15428,7 +16011,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={417.39624,582.41132,567.3042};
@@ -15456,6 +16039,19 @@ class Mission
 					text="UnitA2Gue_SAM1_AG";
 					init="GrpA2Gue_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
 					description="UN SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={416.23572,583.78156,564.76239};
+					azimut=0.32468101;
+					id=1216;
+					side="GUER";
+					vehicle="GUE_Soldier_AA";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2Gue_SAM1_AC";
+					init="GrpA2Gue_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="UN SAM Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -15851,7 +16447,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this;";
 					description="NAPA RESERVED FOR JIP";
 				};
 				class Item1
@@ -15863,7 +16459,7 @@ class Mission
 					vehicle="GUE_Soldier_2";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this;";
 					description="NAPA RESERVED FOR JIP";
 				};
 				class Item2
@@ -15875,7 +16471,7 @@ class Mission
 					vehicle="GUE_Soldier_2";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this;";
 					description="NAPA RESERVED FOR JIP";
 				};
 				class Item3
@@ -15887,7 +16483,7 @@ class Mission
 					vehicle="GUE_Soldier_2";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this;";
 					description="NAPA RESERVED FOR JIP";
 				};
 				class Item4
@@ -15899,7 +16495,7 @@ class Mission
 					vehicle="GUE_Soldier_2";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this;";
 					description="NAPA RESERVED FOR JIP";
 				};
 				class Item5
@@ -15911,7 +16507,7 @@ class Mission
 					vehicle="GUE_Soldier_2";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this;";
 					description="NAPA RESERVED FOR JIP";
 				};
 				class Item6
@@ -15923,7 +16519,7 @@ class Mission
 					vehicle="GUE_Soldier_2";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this;";
 					description="NAPA RESERVED FOR JIP";
 				};
 				class Item7
@@ -15935,7 +16531,7 @@ class Mission
 					vehicle="GUE_Soldier_2";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this;";
 					description="NAPA RESERVED FOR JIP";
 				};
 				class Item8
@@ -15947,7 +16543,7 @@ class Mission
 					vehicle="GUE_Soldier_2";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this;";
 					description="NAPA RESERVED FOR JIP";
 				};
 				class Item9
@@ -15959,7 +16555,7 @@ class Mission
 					vehicle="GUE_Soldier_2";
 					player="PLAY CDG";
 					skill=0.5;
-					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [""r"",this] call f_fnc_assignGear;GrpA2Gue_JIP = group this;";
 					description="NAPA RESERVED FOR JIP";
 				};
 			};
@@ -15972,7 +16568,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={888.97052,522.75378,857.28735};
+					position[]={890.64124,522.75317,858.79187};
 					azimut=0.32468101;
 					id=1049;
 					side="EAST";
@@ -16002,44 +16598,6 @@ class Mission
 		};
 		class Item324
 		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={-70.18454,635.1048,47.893524};
-					azimut=0.32468101;
-					id=1139;
-					side="LOGIC";
-					vehicle="BattleFieldClearance";
-					leader=1;
-					skill=0.5;
-					init="this synchronizeObjectsAdd playableUnits";
-				};
-			};
-		};
-		class Item325
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={-106.70829,633.72485,50.766846};
-					azimut=0.32468101;
-					id=1140;
-					side="LOGIC";
-					vehicle="AlternativeInjurySimulation";
-					leader=1;
-					skill=0.5;
-					init="this synchronizeObjectsAdd playableUnits";
-				};
-			};
-		};
-		class Item326
-		{
 			side="CIV";
 			class Vehicles
 			{
@@ -16048,7 +16606,7 @@ class Mission
 				{
 					position[]={365.14804,475.41672,867.92078};
 					azimut=-1.0788;
-					id=1141;
+					id=1139;
 					side="CIV";
 					vehicle="Haris_Press_EP1";
 					player="PLAY CDG";
@@ -16057,11 +16615,11 @@ class Mission
 					skill=0.60000002;
 					init="this addAction [""Start Camera"",""camera.sqs"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
 					description="Mission Observer (Journalist)";
-					synchronizations[]={1141};
+					synchronizations[]={1139};
 				};
 			};
 		};
-		class Item327
+		class Item325
 		{
 			side="CIV";
 			class Vehicles
@@ -16071,7 +16629,7 @@ class Mission
 				{
 					position[]={369.06528,474.08881,867.78546};
 					azimut=-1.0788;
-					id=1142;
+					id=1140;
 					side="CIV";
 					vehicle="Citizen3_EP1";
 					player="PLAY CDG";
@@ -16080,7 +16638,623 @@ class Mission
 					skill=0.60000002;
 					init="this addAction [""Start Camera"",""camera.sqs"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
 					description="Mission Observer (Civilian)";
-					synchronizations[]={1142};
+					synchronizations[]={1140};
+				};
+			};
+		};
+		class Item326
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-170.1595,549.52655,197.56927};
+					id=1141;
+					side="LOGIC";
+					vehicle="ACE_Viewblock_EnableAIGrassVB_Mod";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item327
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-144.52591,558.01056,197.56927};
+					id=1142;
+					side="LOGIC";
+					vehicle="ACE_AITalk_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item328
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-124.01909,566.45508,196.9986};
+					id=1143;
+					side="LOGIC";
+					vehicle="ACE_Vehicledamage_Enable_Cookoff";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item329
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-170.07607,530.35303,221.63086};
+					id=1144;
+					side="LOGIC";
+					vehicle="ace_sys_repair_tyres";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item330
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-143.9563,538.19598,222.07489};
+					id=1145;
+					side="LOGIC";
+					vehicle="ACE_Wounds_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item331
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-124.01909,545.72064,222.07489};
+					id=1146;
+					side="LOGIC";
+					vehicle="ACE_Wounds_EveryoneMedic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item332
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-101.23374,554.53766,220.93582};
+					id=1147;
+					side="LOGIC";
+					vehicle="ACE_Wounds_FullHeal";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item333
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={631.96057,488.02975,881.40845};
+					azimut=0.32468101;
+					id=1151;
+					side="WEST";
+					vehicle="USMC_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.5;
+					text="UnitUSMC_HMG1_G";
+					init="GrpUSMC_HMG1 = group this; nul = [""hmgg"",this] call f_fnc_assignGear;";
+					description="USMC Heavy MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={634.7796,488.83087,879.08289};
+					azimut=0.32468101;
+					id=1152;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUSMC_HMG1_AG";
+					init="GrpUSMC_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
+					description="USMC Heavy MG Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={629.73804,488.76785,878.62439};
+					azimut=0.32468101;
+					id=1153;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUSMC_HMG1_AC";
+					init="GrpUSMC_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="USMC Heavy MG Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item334
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={649.41949,497.18423,856.11493};
+					azimut=0.32468101;
+					id=1157;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.5;
+					text="UnitUSMC_MTR1_G";
+					init="GrpUSMC_MTR1 = group this; nul = [""mtrg"",this] call f_fnc_assignGear;";
+					description="USMC Mortar Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={652.2384,498.34674,853.789};
+					azimut=0.32468101;
+					id=1158;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUSMC_MTR1_AG";
+					init="GrpUSMC_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
+					description="USMC Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={647.51776,497.8779,853.74402};
+					azimut=0.32468101;
+					id=1159;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUSMC_MTR1_AC";
+					init="GrpUSMC_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="USMC Mortar Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item335
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={666.99323,595.45453,641.71576};
+					azimut=0.32468101;
+					id=1160;
+					side="WEST";
+					vehicle="CDF_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.5;
+					text="UnitCDF_HMG1_G";
+					init="GrpCDF_HMG1 = group this; nul = [""hmgg"",this] call f_fnc_assignGear;";
+					description="CDF Heavy MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={669.81226,594.78516,639.3902};
+					azimut=0.32468101;
+					id=1161;
+					side="WEST";
+					vehicle="CDF_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitCDF_HMG1_AG";
+					init="GrpCDF_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
+					description="CDF Heavy MG Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={664.77069,595.79919,638.9317};
+					azimut=0.32468101;
+					id=1162;
+					side="WEST";
+					vehicle="CDF_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitCDF_HMG1_AC";
+					init="GrpCDF_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="CDF Heavy MG Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item336
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={666.89856,594.90839,626.48083};
+					azimut=0.32468101;
+					id=1163;
+					side="WEST";
+					vehicle="CDF_Soldier";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.5;
+					text="UnitCDF_MTR1_G";
+					init="GrpCDF_MTR1 = group this; nul = [""mtrg"",this] call f_fnc_assignGear;";
+					description="CDF Mortar Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={669.71747,594.06128,624.15491};
+					azimut=0.32468101;
+					id=1164;
+					side="WEST";
+					vehicle="CDF_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitCDF_MTR1_AG";
+					init="GrpCDF_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
+					description="CDF Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={664.99683,595.33301,624.10992};
+					azimut=0.32468101;
+					id=1165;
+					side="WEST";
+					vehicle="CDF_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitCDF_MTR1_AC";
+					init="GrpCDF_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="CDF Mortar Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item337
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={902.42877,503.47299,912.12689};
+					azimut=0.32468101;
+					id=1179;
+					side="EAST";
+					vehicle="ACE_SoldierE_HMG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.5;
+					text="UnitRU_HMG1_G";
+					init="GrpRU_HMG1 = group this; nul = [""hmgg"",this] call f_fnc_assignGear;";
+					description="Russian Army Heavy MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={904.69659,505.22888,910.1601};
+					azimut=0.32468101;
+					id=1180;
+					side="EAST";
+					vehicle="ACE_SoldierE_HMGAG";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitRU_HMG1_AG";
+					init="GrpRU_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
+					description="Russian Army Heavy MG Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={900.96655,503.95996,910.04419};
+					azimut=0.32468101;
+					id=1183;
+					side="EAST";
+					vehicle="ACE_SoldierE_HMGAB";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitRU_HMG1_AC";
+					init="GrpRU_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="Russian Army Heavy MG Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item338
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={903.38281,508.86121,901.6922};
+					azimut=0.32468101;
+					id=1181;
+					side="EAST";
+					vehicle="RU_Soldier";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.5;
+					text="UnitRU_MTR1_G";
+					init="GrpRU_MTR1 = group this; nul = [""mtrg"",this] call f_fnc_assignGear;";
+					description="Russian Army Mortar Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={905.65112,510.61914,899.7254};
+					azimut=0.32468101;
+					id=1182;
+					side="EAST";
+					vehicle="RU_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitRU_MTR1_AG";
+					init="GrpRU_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
+					description="Russian Army Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={901.26056,509.13431,899.56976};
+					azimut=0.32468101;
+					id=1184;
+					side="EAST";
+					vehicle="RU_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitRU_MTR1_AC";
+					init="GrpRU_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="Russian Army Mortar Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item339
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={930.01971,543.32574,606.62836};
+					azimut=0.32468101;
+					id=1188;
+					side="EAST";
+					vehicle="Ins_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.5;
+					text="UnitA2INS_HMG1_G";
+					init="GrpA2INS_HMG1 = group this; nul = [""hmgg"",this] call f_fnc_assignGear;";
+					description="ChDKZ Insurgents Heavy MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={932.28754,542.62488,604.66156};
+					azimut=0.32468101;
+					id=1189;
+					side="EAST";
+					vehicle="Ins_Soldier_1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2INS_HMG1_AG";
+					init="GrpA2INS_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
+					description="ChDKZ Insurgents Heavy MG Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={928.5575,542.75958,604.54565};
+					azimut=0.32468101;
+					id=1192;
+					side="EAST";
+					vehicle="Ins_Soldier_1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2INS_HMG1_AC";
+					init="GrpA2INS_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="ChDKZ Insurgents Heavy MG Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item340
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={930.97375,540.21838,596.19366};
+					azimut=0.32468101;
+					id=1190;
+					side="EAST";
+					vehicle="Ins_Soldier_1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.5;
+					text="UnitA2INS_MTR1_G";
+					init="GrpA2INS_MTR1 = group this; nul = [""mtrg"",this] call f_fnc_assignGear;";
+					description="ChDKZ Insurgents Mortar Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={933.24207,539.5791,594.22687};
+					azimut=0.32468101;
+					id=1191;
+					side="EAST";
+					vehicle="Ins_Soldier_1";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2INS_MTR1_AG";
+					init="GrpA2INS_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
+					description="ChDKZ Insurgents Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={928.8515,539.73584,594.07123};
+					azimut=0.32468101;
+					id=1193;
+					side="EAST";
+					vehicle="RU_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2INS_MTR1_AC";
+					init="GrpA2INS_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="ChDKZ Insurgents Mortar Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item341
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={417.95325,569.21863,601.49805};
+					azimut=0.32468101;
+					id=1217;
+					side="GUER";
+					vehicle="GUE_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.5;
+					text="UnitA2Gue_HMG1_G";
+					init="GrpA2Gue_HMG1 = group this; nul = [""hmgg"",this] call f_fnc_assignGear;";
+					description="NAPA Heavy MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={421.0502,568.98145,598.70691};
+					azimut=0.32468101;
+					id=1218;
+					side="GUER";
+					vehicle="GUE_Soldier_2";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2Gue_HMG1_AG";
+					init="GrpA2Gue_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
+					description="NAPA Heavy MG Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={416.3876,571.19794,598.62903};
+					azimut=0.32468101;
+					id=1222;
+					side="GUER";
+					vehicle="GUE_Soldier_2";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2Gue_HMG1_AC";
+					init="GrpA2Gue_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="NAPA Heavy MG Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item342
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={438.75787,565.63324,600.97449};
+					azimut=0.32468101;
+					id=1219;
+					side="GUER";
+					vehicle="GUE_Soldier_3";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.5;
+					text="UnitA2Gue_MTR1_G_";
+					init="GrpA2Gue_MTR1 = group this; nul = [""mtrg"",this] call f_fnc_assignGear;";
+					description="NAPA Mortar Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={441.85474,566.96936,598.1842};
+					azimut=0.32468101;
+					id=1220;
+					side="GUER";
+					vehicle="GUE_Soldier_3";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2Gue_MTR1_AG";
+					init="GrpA2Gue_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
+					description="NAPA Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={437.4093,566.86694,598.08044};
+					azimut=0.32468101;
+					id=1221;
+					side="GUER";
+					vehicle="GUE_Soldier_3";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitA2Gue_MTR1_AC";
+					init="GrpA2Gue_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="NAPA Mortar Team 1 Ammo Carrier";
 				};
 			};
 		};
@@ -17858,26 +19032,6 @@ class Mission
 			skill=0.60000002;
 			text="INS_TR3";
 			init="nul = [""v_tr"",this] call f_fnc_assignGear;";
-		};
-	};
-	class Markers
-	{
-		items=2;
-		class Item0
-		{
-			position[]={418.26794,527.66675,-197.25009};
-			name="mkrInsertion";
-			text="Insert";
-			type="mil_start";
-			angle=0.32468101;
-		};
-		class Item1
-		{
-			position[]={409.59714,522.8811,-345.81937};
-			name="mkrExtraction";
-			text="Extract";
-			type="mil_end";
-			angle=0.32468101;
 		};
 	};
 };
