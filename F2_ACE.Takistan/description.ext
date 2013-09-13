@@ -34,11 +34,11 @@ class Params
 
         class f_param_debugMode
         {
-                title = "$STR_f_param_debugMode";
-                values[] = {0,1};
-                texts[] = {"Off","On"};
-                default = 0;
-                code = "f_var_debugMode = %1";
+			title = "Debug Mode";
+			values[] = {0,1};
+			texts[] = {"Off","On"};
+			default = 0;
+			code = "f_var_debugMode = %1";
         }; 
 
 // ============================================================================================
@@ -48,19 +48,19 @@ class Params
 
         class f_param_timeOfDay
         {
-                title = "$STR_f_param_timeOfDay";
-                values[] = {0,1,2,3,4,5,6,7};
-                texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7};
-                default = 3;
-                code = "f_param_timeOfDay = %1";
+			title = "Time of Day";
+			values[] = {0,1,2,3,4,5,6,7};
+			texts[] = {"Dawn","Early Morning","Morning","Noon","Afternoon","Evening","Dusk","Night"};
+			default = 3;
+			code = "f_param_timeOfDay = %1";
         };   
         class f_param_weather
-	{
-		title = "$STR_f_param_weather";
-		values[] = {0,1,2,3,4};
-		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4};
-		default = 0;
-		code = "f_param_weather = %1";
+		{
+			title = "$STR_f_param_weather";
+			values[] = {0,1,2,3,4};
+			texts[] = {"Clear","Overcast","Light Fog","Heavy Fog","Storm"};
+			default = 0;
+			code = "f_param_weather = %1";
         };
 
 // ============================================================================================
