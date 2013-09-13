@@ -3,5 +3,10 @@
 ; ====================================================================================
 
 ; Initialize spectating script when player dies:
+;_this execVM "f\common\f_spect\specta.sqf";
 
+; Set ACRE spectator chat on
+[true] call acre_api_fnc_setSpectator;
+
+; Call ACE Spectator Script
 _this call ace_fnc_startSpectator;
