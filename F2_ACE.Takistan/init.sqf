@@ -9,9 +9,9 @@ f_processParamsArray = [] execVM "f\common\f_processParamsArray.sqf";
 // ====================================================================================
 
 // F2_ACE - Run client-side settings, ACE settings
-// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+// Credits: Please see the F2_ACE online manual (http://www.ferstaberinde.com/f2/en/)
 
-#include "f\common\f_clientSettings.sqf";
+#include "f\common\face_clientSettings.sqf";
 
 // ====================================================================================
 
@@ -75,4 +75,11 @@ f_endSelected = -1;
 
 // F2_ACE - Friendly-Fire Logger (to .rpt)
 
-Handle_FFLog = player addeventhandler ["HandleDamage",{_this execVM "f\common\face_handleDamage.sqf"}];
+face_script_ffLog = player addeventhandler ["HandleDamage",{_this execVM "f\common\face_handleDamage.sqf"}];
+
+// ====================================================================================
+
+// F2 - Buddy Team Colours
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+f_script_setTeamColours = [] execVM "f\common\f_setTeamColours.sqf";
