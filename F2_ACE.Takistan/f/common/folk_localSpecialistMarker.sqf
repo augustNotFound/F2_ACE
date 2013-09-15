@@ -84,14 +84,13 @@ if (!alive _unt) then
 // position is updated periodically. This only happens locally - so as not to burden 
 // the server.
 
-		for [{_i=0}, {_i<=10000}, {_i=_i+1}] do
+		while {alive _unt} do
 		{
-			if (alive _unt) then 
-			{
 			_mkrName setMarkerPosLocal [(getPos _unt select 0),(getPos  _unt select 1)];
-			};
 			sleep 6;
 		};
+		//Optionally delete marker after unit death
+		//deletevehiclelocal _mkrName;
 
 // ====================================================================================
 
