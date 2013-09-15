@@ -70,3 +70,9 @@ f_endSelected = -1;
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 [] execVM "f\common\briefing\f_orbatNotes.sqf";
+
+// ====================================================================================
+
+// F2_ACE - Friendly-Fire Logger (to .rpt)
+
+Handle_FFLog = player addeventhandler ["HandleDamage",{_this execVM "f\common\face_handleDamage.sqf"}];
