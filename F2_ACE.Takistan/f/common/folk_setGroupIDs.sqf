@@ -72,6 +72,41 @@ GrpUSMC_AH1 setGroupId ["USMC AH1 -","GroupColor0"];
 
 // ====================================================================================
 
+// GROUP IDs: USMC Desert
+// Automatically assigns intelligible names to groups
+
+GrpUSMCD_CO setGroupId ["USMCD CO -","GroupColor0"];
+GrpUSMCD_DC setGroupId ["USMCD DC -","GroupColor0"];
+GrpUSMCD_ASL setGroupId ["USMCD ASL -","GroupColor0"];
+GrpUSMCD_A1 setGroupId ["USMCD A1 -","GroupColor0"];
+GrpUSMCD_A2 setGroupId ["USMCD A2 -","GroupColor0"];
+GrpUSMCD_A3 setGroupId ["USMCD A3 -","GroupColor0"];
+GrpUSMCD_BSL setGroupId ["USMCD BSL -","GroupColor0"];
+GrpUSMCD_B1 setGroupId ["USMCD B1 -","GroupColor0"];
+GrpUSMCD_B2 setGroupId ["USMCD B2 -","GroupColor0"];
+GrpUSMCD_B3 setGroupId ["USMCD B3 -","GroupColor0"];
+GrpUSMCD_CSL setGroupId ["USMCD CSL -","GroupColor0"];
+GrpUSMCD_C1 setGroupId ["USMCD C1 -","GroupColor0"];
+GrpUSMCD_C2 setGroupId ["USMCD C2 -","GroupColor0"];
+GrpUSMCD_C3 setGroupId ["USMCD C3 -","GroupColor0"];
+GrpUSMCD_MMG1 setGroupId ["USMCD MMG1 -","GroupColor0"];
+GrpUSMCD_MAT1 setGroupId ["USMCD MAT1 -","GroupColor0"];
+GrpUSMCD_ST1 setGroupId ["USMCD ST1 -","GroupColor0"];
+GrpUSMCD_HMG1 setGroupId ["USMCD HMG1 -","GroupColor0"];
+GrpUSMCD_MTR1 setGroupId ["USMCD MTR1 -","GroupColor0"];
+GrpUSMCD_HAT1 setGroupId ["USMCD HAT1 -","GroupColor0"];
+GrpUSMCD_SAM1 setGroupId ["USMCD SAM1 -","GroupColor0"];
+GrpUSMCD_ENG1 setGroupId ["USMCD ENG1 -","GroupColor0"];
+GrpUSMCD_IFV1 setGroupId ["USMCD IFV1 -","GroupColor0"];
+GrpUSMCD_IFV2 setGroupId ["USMCD IFV2 -","GroupColor0"];
+GrpUSMCD_IFV3 setGroupId ["USMCD IFV3 -","GroupColor0"];
+GrpUSMCD_TNK1 setGroupId ["USMCD TNK1 -","GroupColor0"];
+GrpUSMCD_TH1 setGroupId ["USMCD TH1 -","GroupColor0"];
+GrpUSMCD_TH2 setGroupId ["USMCD TH2 -","GroupColor0"];
+GrpUSMCD_AH1 setGroupId ["USMCD AH1 -","GroupColor0"];
+
+// ====================================================================================
+
 // GROUP IDs: CDF
 // Automatically assigns intelligible names to groups
 
@@ -175,6 +210,41 @@ GrpRU_TNK1 setGroupId ["Russian Army TNK1 -","GroupColor0"];
 GrpRU_TH1 setGroupId ["Russian Army TH1 -","GroupColor0"];
 GrpRU_TH2 setGroupId ["Russian Army TH2 -","GroupColor0"];
 GrpRU_AH1 setGroupId ["Russian Army AH1 -","GroupColor0"];
+
+// ====================================================================================
+
+// GROUP IDs: RU Desert
+// Automatically assigns intelligible names to groups
+
+GrpRUD_CO setGroupId ["RUD CO -","GroupColor0"];
+GrpRUD_DC setGroupId ["RUD DC -","GroupColor0"];
+GrpRUD_ASL setGroupId ["RUD ASL -","GroupColor0"];
+GrpRUD_A1 setGroupId ["RUD A1 -","GroupColor0"];
+GrpRUD_A2 setGroupId ["RUD A2 -","GroupColor0"];
+GrpRUD_A3 setGroupId ["RUD A3 -","GroupColor0"];
+GrpRUD_BSL setGroupId ["RUD BSL -","GroupColor0"];
+GrpRUD_B1 setGroupId ["RUD B1 -","GroupColor0"];
+GrpRUD_B2 setGroupId ["RUD B2 -","GroupColor0"];
+GrpRUD_B3 setGroupId ["RUD B3 -","GroupColor0"];
+GrpRUD_CSL setGroupId ["RUD CSL -","GroupColor0"];
+GrpRUD_C1 setGroupId ["RUD C1 -","GroupColor0"];
+GrpRUD_C2 setGroupId ["RUD C2 -","GroupColor0"];
+GrpRUD_C3 setGroupId ["RUD C3 -","GroupColor0"];
+GrpRUD_MMG1 setGroupId ["RUD MMG1 -","GroupColor0"];
+GrpRUD_MAT1 setGroupId ["RUD MAT1 -","GroupColor0"];
+GrpRUD_ST1 setGroupId ["RUD ST1 -","GroupColor0"];
+GrpRUD_HMG1 setGroupId ["RUD HMG1 -","GroupColor0"];
+GrpRUD_MTR1 setGroupId ["RUD MTR1 -","GroupColor0"];
+GrpRUD_HAT1 setGroupId ["RUD HAT1 -","GroupColor0"];
+GrpRUD_SAM1 setGroupId ["RUD SAM1 -","GroupColor0"];
+GrpRUD_ENG1 setGroupId ["RUD ENG1 -","GroupColor0"];
+GrpRUD_IFV1 setGroupId ["RUD IFV1 -","GroupColor0"];
+GrpRUD_IFV2 setGroupId ["RUD IFV2 -","GroupColor0"];
+GrpRUD_IFV3 setGroupId ["RUD IFV3 -","GroupColor0"];
+GrpRUD_TNK1 setGroupId ["RUD TNK1 -","GroupColor0"];
+GrpRUD_TH1 setGroupId ["RUD TH1 -","GroupColor0"];
+GrpRUD_TH2 setGroupId ["RUD TH2 -","GroupColor0"];
+GrpRUD_AH1 setGroupId ["RUD AH1 -","GroupColor0"];
 
 //===================================================================================== 
 
@@ -385,6 +455,46 @@ GrpBAF_TNK1 setGroupId ["British Army TNK1 -","GroupColor0"];
 GrpBAF_TH1 setGroupId ["British Army TH1 -","GroupColor0"];
 GrpBAF_TH2 setGroupId ["British Army TH2 -","GroupColor0"];
 GrpBAF_AH1 setGroupId ["British Army AH1 -","GroupColor0"];
+
+//===================================================================================== 
+
+// GROUP IDs: PMC
+// Automatically assigns intelligible names to groups
+
+GrpPMC_SL setGroupId ["PMC SL -","GroupColor0"];
+GrpPMC_1 setGroupId ["PMC 1 -","GroupColor0"];
+GrpPMC_2 setGroupId ["PMC 2 -","GroupColor0"];
+GrpPMC_3 setGroupId ["PMC 3 -","GroupColor0"];
+
+//===================================================================================== 
+
+// GROUP IDs: German KSK
+// Automatically assigns intelligible names to groups
+
+GrpDE_SOF_SL setGroupId ["DE SOF SL -","GroupColor0"];
+GrpDE_SOF_1 setGroupId ["DE SOF 1 -","GroupColor0"];
+GrpDE_SOF_2 setGroupId ["DE SOF 2 -","GroupColor0"];
+GrpDE_SOF_3 setGroupId ["DE SOF 3 -","GroupColor0"];
+
+//===================================================================================== 
+
+// GROUP IDs: RU Arma Special Forces (Spetsnaz)
+// Automatically assigns intelligible names to groups
+
+GrpRU_SOF_SL setGroupId ["RU SOF SL -","GroupColor0"];
+GrpRU_SOF_1 setGroupId ["RU SOF 1 -","GroupColor0"];
+GrpRU_SOF_2 setGroupId ["RU SOF 2 -","GroupColor0"];
+GrpRU_SOF_3 setGroupId ["RU SOF 3 -","GroupColor0"];
+
+//===================================================================================== 
+
+// GROUP IDs: US Army Special Forces (Delta Force)
+// Automatically assigns intelligible names to groups
+
+GrpUS_SOF_SL setGroupId ["US SOF SL -","GroupColor0"];
+GrpUS_SOF_1 setGroupId ["US SOF 1 -","GroupColor0"];
+GrpUS_SOF_2 setGroupId ["US SOF 2 -","GroupColor0"];
+GrpUS_SOF_3 setGroupId ["US SOF 3 -","GroupColor0"];
 
 //===================================================================================== 
 
