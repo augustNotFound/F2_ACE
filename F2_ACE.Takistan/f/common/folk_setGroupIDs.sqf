@@ -141,6 +141,13 @@ GrpTK_TH1 setGroupId ["Takistani Army TH1 -","GroupColor0"];
 GrpTK_TH2 setGroupId ["Takistani Army TH2 -","GroupColor0"];
 GrpTK_AH1 setGroupId ["Takistani Army AH1 -","GroupColor0"];
 
+//Special Forces
+
+GrpTK_SOF_SL setGroupId ["TAK SOF SL -","GroupColor0"];
+GrpTK_SOF_1 setGroupId ["TAK SOF 1 -","GroupColor0"];
+GrpTK_SOF_2 setGroupId ["TAK SOF 2 -","GroupColor0"];
+GrpTK_SOF_3 setGroupId ["TAK SOF 3 -","GroupColor0"];
+
 // ====================================================================================
 
 // GROUP IDs: Russian Army
