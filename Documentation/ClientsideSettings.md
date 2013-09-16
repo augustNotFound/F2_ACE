@@ -1,40 +1,31 @@
-F2 Pre-placed Platoons
+F2_ACE Clientside Settings
 =======
 
 Description
 -----------
 
-To add to the existing F2 Pre-placed Platoons component, F2_ACE includes 3 man weapons attachments (to decrease the individual weight load of each unit) and the addition of a number of extra factions introduced with ACEX.
+With the introduction of ACE, a number of clientside options become available to mission-makers, such as a built-in view distance modifier. This is also the file in which the default ACE Wounds medical gear is disabled, so that the gear scripts can re-add the gear to the correct units.
 
 Required files
 --------------
 
 All the code associated with this component is found in:
 
-* mission.sqm
+* init.sqf
+* f\common\face_clientSettings.sqf
 
 ### How to use ###
 
-**Platoon structures**
-
-http://ferstaberinde.com/f2/en/index.php?title=CO_Folk_ARPS_Platoons#Platoon_structures
-
-Needs re-writing with altered attachements + new factions.
+All settings excluding those included in the "Required settings" section are optional, and can be disabled by adding a `//` to the beginning of the line containing the change.
 
 ### How to disable ###
 
-Simply delete any units you do not want, in the editor, and save the mission.
+Add a `//` to the beginning of line 14 in the init.sqf file.
 
 Credits
 -------
 
-**Original Script**
-
-* F2 Dev Team
-
-**Modifications**
-
-* Cam
 * CaseMonster
+* Cam
 
-[[Category:Core Components]]
+[[Category:New Components]]

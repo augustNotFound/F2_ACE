@@ -21,5 +21,3 @@ Credits
 
 * Cam (404: Group Not Found)
 * CaseMonster (DerpSquad)
-
-[[Category:Core Components]]

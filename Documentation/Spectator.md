@@ -39,4 +39,4 @@ Credits
 * ACE Team
 * Kegetys
 
-[[Category:Core Components]]
+[[Category:Modified Components]]

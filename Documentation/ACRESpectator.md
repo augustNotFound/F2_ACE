@@ -26,4 +26,4 @@ Credits
 
 * ACRE Team
 
-[[Category:Core Components]]
+[[Category:Modified Components]]

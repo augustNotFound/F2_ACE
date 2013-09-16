@@ -39,7 +39,7 @@ Credits
 
 **Modifications**
 
-* Cam
 * CaseMonster
+* Cam
 
-[[Category:Core Components]]
+[[Category:Modified Components]]
