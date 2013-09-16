@@ -1,5 +1,5 @@
-// F3 - Safe Start, Client Hint
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// F2_ACE - Safe Start, Client Hint
+// Credits: Please see the F2_ACE online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 //Run the hint on all clients
 if(!isDedicated) then
