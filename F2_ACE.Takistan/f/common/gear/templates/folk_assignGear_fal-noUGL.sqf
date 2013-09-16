@@ -44,8 +44,6 @@
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
-// GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
-
 _rifle = "FN_FAL"; _riflemag = "20Rnd_762x51_FNFAL";																							// Standard Riflemen (Spotter, HMG Assistant Gunner, MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, HAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 
 _carbine = "FN_FAL"; _carbinemag = "20Rnd_762x51_FNFAL"; 	 																					// Standard Carabineer (Medic, HMG Gunner, Rifleman (AT), Rifleman (AA), MAT Gunner, HAT Gunner, MTR Gunner, Carabineer)
