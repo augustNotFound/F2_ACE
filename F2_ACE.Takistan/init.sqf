@@ -83,3 +83,10 @@ face_script_ffLog = player addeventhandler ["HandleDamage",{_this execVM "f\comm
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 f_script_setTeamColours = [] execVM "f\common\f_setTeamColours.sqf";
+
+// ====================================================================================
+
+// F3 - Mission Timer/Safe Start
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+[] execVM "f\common\f_safeStart.sqf";
