@@ -1,5 +1,5 @@
-// F3 - Safe Start, Server Loop
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// F2_ACE - Safe Start, Server Loop
+// Credits: Please see the F2_ACE online manual (http://www.ferstaberinde.com/f3/en/)
 //=====================================================================================
 // Timer for the mission setup
 if(isServer) then
