@@ -1,5 +1,5 @@
 // F2_ACE - Safe Start, Safety Toggle
-// Credits: Please see the F2_ACE online manual (http://www.ferstaberinde.com/f3/en/)
+// Credits: Please see the F2_ACE online manual (http://www.ferstaberinde.com/f2/en/)
 //=====================================================================================
 //Grab variable
 _switch = _this select 0;
