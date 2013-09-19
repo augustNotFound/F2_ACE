@@ -1,3 +1,9 @@
+// F2_ACE - Friendly-Fire Logger (to .rpt)
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+// ====================================================================================
+
+private["_unit", "_damage", "_sourceunit", "_ammo", "_text"];
+
 _unit = _this select 0;
 _damage = _this select 2;
 _sourceunit = _this select 3;
