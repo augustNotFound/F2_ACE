@@ -38,3 +38,6 @@ ACE_sys_tracking_MarkersEnabled = false;
 
 // Disables loss of gear for vehicle crew
 ace_sys_eject_fnc_weaponCheckEnabled = {false};
+
+// Prevents LEA (Loadout Editor for Arma) execution
+enable_lea_addon = false;
