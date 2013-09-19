@@ -1,5 +1,5 @@
 // F2_ACE - Safe Start
-// Credits: Please see the F2_ACE online manual (http://www.ferstaberinde.com/f3/en/)
+// Credits: Please see the F2_ACE online manual (http://www.ferstaberinde.com/f2/en/)
 // ====================================================================================
 //	This script inits the Mission Timer and the Safe Start, has the server setup the publicVariable 
 //      while the client waits, sets units invincibility and displays hints, then disables it.
