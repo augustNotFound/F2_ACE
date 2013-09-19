@@ -49,20 +49,14 @@ _mkrName = Format ["mkr_%1",_unit];
 // As long as certain conditions are met (the group leader is alive and holding the
 // radio, or radio object placeholder) the marker position is updated periodically.
 // This only happens locally - so as not to burden the server.
-
-		for [{_i=0}, {_i<=10000}, {_i=_i+1}] do
+		
+		while {alive _unit} do
 		{
-			if (alive _unit) then 
-			{
-				_mkrName setMarkerPosLocal [(getPos _unit select 0),(getPos _unit select 1)];
-				_mkrName setMarkerDirLocal (direction _unit);
-			}
-			else
-			{
-				_mkrName setMarkerPosLocal [0,0];
-			};
+			_mkrName setMarkerPosLocal [(getPos _unit select 0),(getPos _unit select 1)];
+			_mkrName setMarkerDirLocal (direction _unit);
 			sleep 3;
-		};
+		}
+		_mkrName setMarkerPosLocal [0,0];
 
 // ====================================================================================
 
