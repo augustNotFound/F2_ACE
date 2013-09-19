@@ -87,6 +87,6 @@ f_script_setTeamColours = [] execVM "f\common\f_setTeamColours.sqf";
 // ====================================================================================
 
 // F2_ACE - Mission Timer/Safe Start
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f2/en/)
 
 [] execVM "f\common\f_safeStart.sqf";
