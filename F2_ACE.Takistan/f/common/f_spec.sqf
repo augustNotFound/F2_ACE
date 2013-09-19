@@ -4,15 +4,12 @@
 [(_this select 1)] exec "camera.sqs";
 
 //Wait until camera has been initialized
-while{isNil "BIS_DEBUG_CAM";} do
-{
-	sleep 1;
-};
+waituntil{ sleep 1; !isNil "BIS_DEBUG_CAM";};
 
 //Prevent the camera from clipping
 camera1 enablesimulation false;
 
-//Attach player to camera
+//Attach player to camera while camera is active, attachto doesn't work
 while {!isNil "BIS_DEBUG_CAM";} do
 {
 	camera1 setpos [(getpos BIS_DEBUG_CAM select 0), (getpos BIS_DEBUG_CAM select 1), (getpos BIS_DEBUG_CAM select 2) - 0.5];
