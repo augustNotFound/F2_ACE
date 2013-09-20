@@ -56,7 +56,9 @@ _mkrName = Format ["mkr_%1",_unit];
 			_mkrName setMarkerDirLocal (direction _unit);
 			sleep 3;
 		}
-		_mkrName setMarkerPosLocal [0,0];
+		
+		// Remove marker on player death.
+		// _mkrName setMarkerPosLocal [0,0];
 
 // ====================================================================================
 
