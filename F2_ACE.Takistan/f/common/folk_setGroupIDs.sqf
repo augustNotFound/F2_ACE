@@ -70,13 +70,6 @@ GrpUSMC_TH1 setGroupId ["USMC TH1 -","GroupColor0"];
 GrpUSMC_TH2 setGroupId ["USMC TH2 -","GroupColor0"];
 GrpUSMC_AH1 setGroupId ["USMC AH1 -","GroupColor0"];
 
-//Special Forces
-
-GrpUSMC_SOF_SL setGroupId ["USMC SOF SL -","GroupColor0"];
-GrpUSMC_SOF_1 setGroupId ["USMC SOF 1 -","GroupColor0"];
-GrpUSMC_SOF_2 setGroupId ["USMC SOF 2 -","GroupColor0"];
-GrpUSMC_SOF_3 setGroupId ["USMC SOF 3 -","GroupColor0"];
-
 // ====================================================================================
 
 // GROUP IDs: USMC Desert
@@ -147,7 +140,6 @@ GrpCDF_TH1 setGroupId ["CDF TH1 -","GroupColor0"];
 GrpCDF_TH2 setGroupId ["CDF TH2 -","GroupColor0"];
 GrpCDF_AH1 setGroupId ["CDF AH1 -","GroupColor0"];
 
-
 // ====================================================================================
 
 // GROUP IDs: TAKISTANI ARMY
@@ -182,13 +174,6 @@ GrpTK_TNK1 setGroupId ["Takistani Army TNK1 -","GroupColor0"];
 GrpTK_TH1 setGroupId ["Takistani Army TH1 -","GroupColor0"];
 GrpTK_TH2 setGroupId ["Takistani Army TH2 -","GroupColor0"];
 GrpTK_AH1 setGroupId ["Takistani Army AH1 -","GroupColor0"];
-
-//Special Forces
-
-GrpTK_SOF_SL setGroupId ["TAK SOF SL -","GroupColor0"];
-GrpTK_SOF_1 setGroupId ["TAK SOF 1 -","GroupColor0"];
-GrpTK_SOF_2 setGroupId ["TAK SOF 2 -","GroupColor0"];
-GrpTK_SOF_3 setGroupId ["TAK SOF 3 -","GroupColor0"];
 
 // ====================================================================================
 
@@ -492,7 +477,7 @@ GrpDE_SOF_3 setGroupId ["DE SOF 3 -","GroupColor0"];
 
 //===================================================================================== 
 
-// GROUP IDs: RU Arma Special Forces (Spetsnaz)
+// GROUP IDs: RU Army Special Forces (Spetsnaz)
 // Automatically assigns intelligible names to groups
 
 GrpRU_SOF_SL setGroupId ["RU SOF SL -","GroupColor0"];
@@ -509,6 +494,26 @@ GrpUS_SOF_SL setGroupId ["US SOF SL -","GroupColor0"];
 GrpUS_SOF_1 setGroupId ["US SOF 1 -","GroupColor0"];
 GrpUS_SOF_2 setGroupId ["US SOF 2 -","GroupColor0"];
 GrpUS_SOF_3 setGroupId ["US SOF 3 -","GroupColor0"];
+
+//===================================================================================== 
+
+// GROUP IDs: USMC Special Forces (Force Recon)
+// Automatically assigns intelligible names to groups
+
+GrpUSMC_SOF_SL setGroupId ["USMC SOF SL -","GroupColor0"];
+GrpUSMC_SOF_1 setGroupId ["USMC SOF 1 -","GroupColor0"];
+GrpUSMC_SOF_2 setGroupId ["USMC SOF 2 -","GroupColor0"];
+GrpUSMC_SOF_3 setGroupId ["USMC SOF 3 -","GroupColor0"];
+
+//===================================================================================== 
+
+// GROUP IDs: TK Special Forces
+// Automatically assigns intelligible names to groups
+
+GrpTK_SOF_SL setGroupId ["TAK SOF SL -","GroupColor0"];
+GrpTK_SOF_1 setGroupId ["TAK SOF 1 -","GroupColor0"];
+GrpTK_SOF_2 setGroupId ["TAK SOF 2 -","GroupColor0"];
+GrpTK_SOF_3 setGroupId ["TAK SOF 3 -","GroupColor0"];
 
 //===================================================================================== 
 
