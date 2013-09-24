@@ -70,6 +70,13 @@ GrpUSMC_TH1 setGroupId ["USMC TH1 -","GroupColor0"];
 GrpUSMC_TH2 setGroupId ["USMC TH2 -","GroupColor0"];
 GrpUSMC_AH1 setGroupId ["USMC AH1 -","GroupColor0"];
 
+//Special Forces
+
+GrpUSMC_SOF_SL setGroupId ["USMC SOF SL -","GroupColor0"];
+GrpUSMC_SOF_1 setGroupId ["USMC SOF 1 -","GroupColor0"];
+GrpUSMC_SOF_2 setGroupId ["USMC SOF 2 -","GroupColor0"];
+GrpUSMC_SOF_3 setGroupId ["USMC SOF 3 -","GroupColor0"];
+
 // ====================================================================================
 
 // GROUP IDs: USMC Desert
