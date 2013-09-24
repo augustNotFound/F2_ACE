@@ -1,16 +1,14 @@
 // F2_ACE - Client Settings
 // ====================================================================================
 
-/*
-Required settings
-*/
+// REQUIRED SETTINGS
 
 // Disable automatic assignation of medical gear
 player setVariable ["ace_sys_wounds_no_medical_gear", true];
 
-/*
-Recommended settings
-*/
+// ====================================================================================
+
+// RECOMMENDED SETTINGS
 
 // Disable Saving and Auto Saving
 enableSaving [false, false];
@@ -24,9 +22,12 @@ enableRadio false;
 // Disables AI talk on players
 ace_sys_aitalk_talkforplayer = false;		
 
-/*
-Optional settings
-*/
+// Prevents LEA (Loadout Editor for Arma) execution
+enable_lea_addon = false;
+
+// ====================================================================================
+
+// OPTIONAL SETTINGS
 
 // Sets ACE Settings viewdistance
 missionNamespace setVariable ["ace_viewdistance_limit",8000];	
@@ -38,6 +39,3 @@ ACE_sys_tracking_MarkersEnabled = false;
 
 // Disables loss of gear for vehicle crew
 ace_sys_eject_fnc_weaponCheckEnabled = {false};
-
-// Prevents LEA (Loadout Editor for Arma) execution
-enable_lea_addon = false;
