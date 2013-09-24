@@ -1,5 +1,6 @@
 // F2_ACE - Attaches the camera unit to the camera, allows camera to hear ACRE enabled players
 // ====================================================================================
+
 //Run the camera script
 [(_this select 1)] exec "camera.sqs";
 
