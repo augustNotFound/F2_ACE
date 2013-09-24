@@ -63,7 +63,7 @@ case "civ_ru":{_faction="bis_tk_civ";};		// CIV_RU as TK_CIV (note: no backpacks
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_us") then {
-#include "templates\folk_assignGear_m16a4.sqf"
+#include "templates\folk_assignGear_m16.sqf"
 };
 
 // ====================================================================================
@@ -73,7 +73,7 @@ if (_faction == "bis_us") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "usmc") then {
-#include "templates\folk_assignGear_m16a4.sqf"
+#include "templates\folk_assignGear_m16.sqf"
 };
 
 // ====================================================================================
@@ -83,7 +83,7 @@ if (_faction == "usmc") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "cdf") then {
-#include "templates\folk_assignGear_m16a2.sqf"
+#include "templates\folk_assignGear_m16.sqf"
 };
 
 // ====================================================================================
@@ -163,7 +163,7 @@ if (_faction == "gue") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_un") then {
-#include "templates\folk_assignGear_m16a2.sqf"
+#include "templates\folk_assignGear_m16.sqf"
 };
 
 // ====================================================================================
@@ -183,7 +183,7 @@ if (_faction == "bis_cz") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_ger") then {
-#include "templates\folk_assignGear_m4.sqf" // For now, as no seperate loadout for German Forces available.
+#include "templates\folk_assignGear_g36-nougl.sqf"
 };
 
 // ====================================================================================
@@ -207,6 +207,17 @@ if (_faction == "bis_civ_special") then {
 };
 
 // ====================================================================================
+
+// GEAR: PMC
+// The following block of code executes only if the player is in a CIVILIAN (SPECIAL) slot; it 
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "pmc_baf") then {
+#include "templates\folk_assignGear_m8.sqf"
+};
+
+// ====================================================================================
+
 
 // GEAR: ACRE
 
