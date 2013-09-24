@@ -7,17 +7,17 @@
 waituntil{ sleep 1; !isNil "BIS_DEBUG_CAM";};
 
 //Prevent the camera from clipping
-camera1 enablesimulation false;
+f2_ace_camera_unit enablesimulation false;
 
 //Attach player to camera while camera is active, attachto doesn't work
 while {!isNil "BIS_DEBUG_CAM";} do
 {
-	camera1 setpos [(getpos BIS_DEBUG_CAM select 0), (getpos BIS_DEBUG_CAM select 1), (getpos BIS_DEBUG_CAM select 2) - 0.5];
+	f2_ace_camera_unit setpos [(getpos BIS_DEBUG_CAM select 0), (getpos BIS_DEBUG_CAM select 1), (getpos BIS_DEBUG_CAM select 2) - 0.5];
 	sleep .1;
 };
 
 //Allow the camera to clip
-camera1 enablesimulation true;
+f2_ace_camera_unit enablesimulation true;
 
 //Detach camera and teleport to corner of map to prevent interference
-camera1 setpos [0,0,0];
+f2_ace_camera_unit setpos [0,0,0];
