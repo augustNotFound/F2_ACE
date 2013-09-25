@@ -5,7 +5,7 @@
 //      while the client waits, sets units invincibility and displays hints, then disables it.
 
 //Wait for sync
-#include "f_waitForJIP.sqf"
+#include "..\f_waitForJIP.sqf"
 
 //Have the server setup the variables while clients wait for jip
 if(isServer) then 
@@ -22,10 +22,10 @@ if (pv_mission_timer > 0) then
 {
 	//Start Mission Timer, Mission Timer Hint, turn on invincibility
 	[] execVM "f\server\f_safeStartLoop.sqf";
-	[] execVM "f\common\f_safeStartHint.sqf";
-	[true] execVM "f\common\f_safety.sqf";
+	[] execVM "f\common\safestart\f_safeStartHint.sqf";
+	[true] execVM "f\common\safestart\f_safety.sqf";
 	
 	//Wait until timer hits 0, turn invincibility off
 	waituntil {sleep 10; pv_mission_timer == 0};
-	[false] execVM "f\common\f_safety.sqf";
+	[false] execVM "f\common\safestart\f_safety.sqf";
 };

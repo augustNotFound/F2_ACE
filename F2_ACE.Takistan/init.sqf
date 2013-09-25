@@ -32,21 +32,21 @@ f_processParamsArray = [] execVM "f\common\f_processParamsArray.sqf";
 // F2 - OA Folk Group IDs
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-f_script_setGroupIDs = [] execVM "f\common\folk_setGroupIDs.sqf";
+f_script_setGroupIDs = [] execVM "f\common\markers\folk_setGroupIDs.sqf";
 
 // ====================================================================================
 
 // F2 - ShackTactical Fireteam Member Markers
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-[] execVM "f\common\ShackTac_setlocalFTMemberMarkers.sqf";
+[] execVM "f\common\markers\ShackTac_setlocalFTMemberMarkers.sqf";
 
 // ====================================================================================
 
 // F2 - OA Folk Group Markers
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-[] execVM "f\common\folk_setLocalGroupMarkers.sqf";
+[] execVM "f\common\markers\folk_setLocalGroupMarkers.sqf";
 
 // ====================================================================================
 
@@ -82,11 +82,11 @@ f_endSelected = -1;
 // F2 - Buddy Team Colours
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-f_script_setTeamColours = [] execVM "f\common\f_setTeamColours.sqf";
+f_script_setTeamColours = [] execVM "f\common\markers\f_setTeamColours.sqf";
 
 // ====================================================================================
 
 // F2_ACE - Mission Timer/Safe Start
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f2/en/)
 
-[] execVM "f\common\f_safeStart.sqf";
+[] execVM "f\common\safestart\f_safeStart.sqf";

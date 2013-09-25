@@ -5,12 +5,12 @@
 // JIP CHECK
 // Prevents the script executing until the player has synchronised correctly:
 
-#include "f_waitForJIP.sqf"
+#include "..\f_waitForJIP.sqf"
 
 // ====================================================================================
 
 {
-	[_x, 0, "ColorYellow"] execVM "f\common\ShackTac_localFTMemberMarker.sqf";
+	[_x, 0, "ColorYellow"] execVM "f\common\markers\ShackTac_localFTMemberMarker.sqf";
 }
 forEach units (group player);
 

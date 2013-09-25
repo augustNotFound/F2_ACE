@@ -5,7 +5,7 @@
 // JIP CHECK
 // Prevents the script executing until the player has synchronised correctly:
 
-#include "f_waitForJIP.sqf"
+#include "..\f_waitForJIP.sqf"
 
 // ====================================================================================
 
