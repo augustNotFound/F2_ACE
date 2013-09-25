@@ -5,7 +5,12 @@
 //      while the client waits, sets units invincibility and displays hints, then disables it.
 
 //Wait for sync
-#include "..\f_waitForJIP.sqf"
+if (!isDedicated && (player != player)) then
+{
+    waitUntil {player == player};
+    waitUntil {time > 10};
+};
+
 
 //Have the server setup the variables while clients wait for jip
 if(isServer) then 

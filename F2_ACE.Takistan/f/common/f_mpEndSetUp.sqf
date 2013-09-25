@@ -5,7 +5,11 @@
 // JIP CHECK
 // Prevents the script executing until the player has synchronised correctly:
 
-#include "f_waitForJIP.sqf"
+if (!isDedicated && (player != player)) then
+{
+    waitUntil {player == player};
+    waitUntil {time > 10};
+};
 
 // ====================================================================================
 
