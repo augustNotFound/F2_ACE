@@ -27,7 +27,7 @@ if (pv_mission_timer > 0) then
 {
 	//Start Mission Timer, Mission Timer Hint, turn on invincibility
 	[] execVM "f\server\f_safeStartLoop.sqf";
-	[] execVM "f\common\safestart\f_safeStartHint.sqf";
+	//[] execVM "f\common\safestart\f_safeStartHint.sqf";
 	[true] execVM "f\common\safestart\f_safety.sqf";
 	
 	//Wait until timer hits 0, turn invincibility off
