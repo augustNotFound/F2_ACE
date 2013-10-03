@@ -94,21 +94,21 @@ switch (_weather) do
 	case 2:
 	{
 		_MissionOvercast = 00.60;
-		_MissionFog = 00.8125;
+		_MissionFog = 00.4125;
 		_MissionRain = 00.00;
 	};
 // Heavy Fog
 	case 3:
 	{
 		_MissionOvercast = 00.60;
-		_MissionFog = 00.96;
+		_MissionFog = 00.85;
 		_MissionRain = 00.00;
 	};
 // Storm
 	case 4:
 	{
 		_MissionOvercast = 01.00;
-		_MissionFog = 00.50;
+		_MissionFog = 00.4125;
 		_MissionRain = 01.00;
 	};
 };
