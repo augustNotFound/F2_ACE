@@ -19,6 +19,16 @@ private ["_unit","_isFireteam"];
 
 // ====================================================================================
 
+// WAIT FOR PLAYER TO GO IN-GAME AND ST-HUD TO INTIALISE
+
+waitUntil{alive player}; // Wait for player to get in-game
+
+waitUntil{!isNil "ST_FTHud_Init"} // Wait for ST-Hud to begin initialising
+
+sleep 10; // Give it 10 seconds, just in case
+
+// ====================================================================================
+
 // SET KEY VARIABLES
 
 _unit = player;

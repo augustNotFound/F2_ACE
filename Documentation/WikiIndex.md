@@ -23,7 +23,7 @@ Clientside Settings
 
 Friendly-fire Logger
 
-Buddy Team Components 
+Buddy Team Colours 
 
 Briefing Anti-Damage
 
