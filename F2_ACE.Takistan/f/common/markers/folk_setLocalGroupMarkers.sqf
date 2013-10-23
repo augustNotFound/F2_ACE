@@ -672,6 +672,40 @@ switch (_unitfaction) do
        
 // ====================================================================================
 
+// MARKERS: AFRICAN REBELS
+// Markers seen by players in AFRICAN REBELS slots.
+
+	case "ibr_rebel_faction":
+	{
+		["GrpREB_CO", 0, "CO", "ColorYellow"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpREB_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpREB_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_B3", 1, "B3", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_CSL", 0, "CSL", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_C1", 1, "C1", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_C2", 1, "C2", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_C3", 1, "C3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_MMG1", 2, "MMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_MAT1", 3, "MAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_ST1",  4, "ST1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_HMG1",  2, "HMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_MTR1",  5, "MTR1", "ColorOrange"] spawn fnc_folk_localGroupMarker;		
+		["GrpREB_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpREB_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
+		["UnitREB_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitREB_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitREB_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitREB_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitREB_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+	};
+
 };
 
 // ====================================================================================

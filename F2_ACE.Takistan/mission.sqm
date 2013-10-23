@@ -50,7 +50,9 @@ class Mission
 		"acex_usnavy_men_usmc",
 		"CAWheeled2_BTR90",
 		"ace_c_vehicle",
-		"acex_veh_stryker"
+		"acex_veh_stryker",
+		"ibr_civilian_patch",
+		"ibr_isladuala"
 	};
 	addOnsAuto[]=
 	{
@@ -68,6 +70,7 @@ class Mission
 		"cacharacters_pmc",
 		"ace_c_men",
 		"CACharacters_BAF",
+		"ibr_civilian_patch",
 		"CAWheeled2_BTR90",
 		"ace_c_vehicle",
 		"caair",
@@ -113,7 +116,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=413;
+		items=435;
 		class Item0
 		{
 			side="WEST";
@@ -21153,6 +21156,1008 @@ class Mission
 				};
 			};
 		};
+		class Item413
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1305.4578,558.12811,682.76367};
+					id=1393;
+					side="EAST";
+					vehicle="ibr_rebel22";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_CO";
+					init="GrpREB_CO = group this; nul = [""co"",this] call f_fnc_assignGear;";
+					description="African Rebels Commander";
+				};
+				class Item1
+				{
+					position[]={1310.8883,557.83844,678.89532};
+					id=1394;
+					side="EAST";
+					vehicle="ibr_rebel66";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_CO_M";
+					init="GrpREB_CO = group this;nul = [""m"",this] call f_fnc_assignGear;";
+					description="African Rebels Medic";
+				};
+			};
+		};
+		class Item414
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1303.3635,562.0376,667.80493};
+					id=1395;
+					side="EAST";
+					vehicle="ibr_rebel22";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_DC";
+					init="GrpREB_DC = group this;nul = [""dc"",this] call f_fnc_assignGear;";
+					description="African Rebels Deputy Commander";
+				};
+				class Item1
+				{
+					position[]={1309.3087,561.59515,664.19946};
+					id=1396;
+					side="EAST";
+					vehicle="ibr_rebel66";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_DC_M";
+					init="GrpREB_DC = group this;nul = [""m"",this] call f_fnc_assignGear;";
+					description="African Rebels Medic";
+				};
+			};
+		};
+		class Item415
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1322.7751,2.8535452,631.05676};
+					id=1397;
+					side="EAST";
+					vehicle="ibr_rebel22";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_ASL";
+					init="GrpREB_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha Squad Leader";
+				};
+				class Item1
+				{
+					position[]={1328.7203,2.8539281,627.50452};
+					id=1398;
+					side="EAST";
+					vehicle="ibr_rebel66";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_ASL_M";
+					init="GrpREB_ASL = group this;nul = [""m"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha Medic";
+				};
+			};
+		};
+		class Item416
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1358.7144,7.704782,630.8844};
+					id=1399;
+					side="EAST";
+					vehicle="ibr_rebel22";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_BSL";
+					init="GrpREB_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo Squad Leader";
+				};
+				class Item1
+				{
+					position[]={1364.6595,2.8539281,627.33215};
+					id=1400;
+					side="EAST";
+					vehicle="ibr_rebel66";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_BSL_M";
+					init="GrpREB_BSL = group this;nul = [""m"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo Medic";
+				};
+			};
+		};
+		class Item417
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1395.9318,2.8526254,633.59558};
+					id=1401;
+					side="EAST";
+					vehicle="ibr_rebel22";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_CSL";
+					init="GrpREB_CSL = group this;nul = [""dc"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie Squad Leader";
+				};
+				class Item1
+				{
+					position[]={1401.8771,2.8539124,630.04333};
+					id=1402;
+					side="EAST";
+					vehicle="ibr_rebel66";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_CSL_M";
+					init="GrpREB_CSL = group this;nul = [""m"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie Medic";
+				};
+			};
+		};
+		class Item418
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1319.0941,2.8539281,607.47986};
+					id=1403;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_A1_FTL";
+					init="GrpREB_A1 = group this;nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={1322.6956,2.8539281,602.93152};
+					id=1404;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_A1_AR";
+					init="GrpREB_A1 = group this;nul = [""ar"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={1327.0552,2.8539281,602.70203};
+					id=1405;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_A1_AAR";
+					init="GrpREB_A1 = group this;nul = [""aar"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={1331.438,2.8539281,602.73621};
+					id=1406;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_A1_AT";
+					init="GrpREB_A1 = group this;nul = [""rat"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item419
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1319.0018,2.8539281,592.7179};
+					id=1407;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_A2_FTL";
+					init="GrpREB_A2 = group this;nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={1322.6033,2.8539281,588.16956};
+					id=1408;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_A2_AR";
+					init="GrpREB_A2 = group this;nul = [""ar"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={1326.8616,2.8539281,587.94006};
+					id=1409;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_A2_AAR";
+					init="GrpREB_A2 = group this;nul = [""aar"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={1331.3965,2.8539281,587.77222};
+					id=1410;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_A2_AT";
+					init="GrpREB_A2 = group this;nul = [""rat"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item420
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1319.1132,554.3136,579.89319};
+					id=1411;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_A3_FTL";
+					init="GrpREB_A3 = group this;nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={1322.8801,2.8539281,575.34485};
+					id=1412;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_A3_AR";
+					init="GrpREB_A3 = group this;nul = [""ar"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={1327.1892,2.8539281,575.21667};
+					id=1413;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_A3_AAR";
+					init="GrpREB_A3 = group this;nul = [""aar"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={1331.4844,2.8539281,574.96277};
+					id=1414;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_A3_AT";
+					init="GrpREB_A3 = group this;nul = [""rat"",this] call f_fnc_assignGear;";
+					description="African Rebels Alpha 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item421
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1356.2465,2.8539281,605.39429};
+					id=1415;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_B1_FTL";
+					init="GrpREB_B1 = group this;nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={1359.8479,2.8539281,600.84595};
+					id=1416;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_B1_AR";
+					init="GrpREB_B1 = group this;nul = [""ar"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={1364.2075,2.8539281,600.61646};
+					id=1417;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_B1_AAR";
+					init="GrpREB_B1 = group this;nul = [""aar"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={1368.5903,2.8539281,600.65063};
+					id=1418;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_B1_AT";
+					init="GrpREB_B1 = group this;nul = [""rat"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item422
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1356.1542,535.28864,590.63232};
+					id=1419;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_B2_FTL";
+					init="GrpREB_B2 = group this;nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={1359.7556,2.8539281,586.08398};
+					id=1420;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_B2_AR";
+					init="GrpREB_B2 = group this;nul = [""ar"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={1364.0139,2.8539281,585.85449};
+					id=1421;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_B2_AAR";
+					init="GrpREB_B2 = group this;nul = [""aar"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={1368.5488,2.8539281,585.68665};
+					id=1422;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_B2_AT";
+					init="GrpREB_B2 = group this;nul = [""rat"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item423
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1356.4309,2.8539281,577.80762};
+					id=1423;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_B3_FTL";
+					init="GrpREB_B3 = group this;nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={1360.0325,2.8539281,573.25928};
+					id=1424;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_B3_AR";
+					init="GrpREB_B3 = group this;nul = [""ar"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={1364.3416,2.8539281,573.1311};
+					id=1425;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_B3_AAR";
+					init="GrpREB_B3 = group this;nul = [""aar"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 3 Assistant Automatic Riflema";
+				};
+				class Item3
+				{
+					position[]={1368.6367,2.8539281,572.8772};
+					id=1426;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_B3_AT";
+					init="GrpREB_B3 = group this;nul = [""rat"",this] call f_fnc_assignGear;";
+					description="African Rebels Bravo 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item424
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1395.1047,7.4874306,606.34216};
+					id=1427;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_C1_FTL";
+					init="GrpREB_C1 = group this;nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={1398.7062,2.8539281,601.79382};
+					id=1428;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_C1_AR";
+					init="GrpREB_C1 = group this;nul = [""ar"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={1403.0659,2.8539281,601.56433};
+					id=1429;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_C1_AAR";
+					init="GrpREB_C1 = group this;nul = [""aar"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={1407.4487,2.8539281,601.59851};
+					id=1430;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_C1_AT";
+					init="GrpREB_C1 = group this;nul = [""rat"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item425
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1395.0125,2.8539281,591.5802};
+					id=1431;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_C2_FTL";
+					init="GrpREB_C2 = group this;nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={1398.6139,2.8539281,587.03186};
+					id=1432;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_C2_AR";
+					init="GrpREB_C2 = group this;nul = [""ar"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={1402.8723,2.8539281,586.80237};
+					id=1433;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_C2_AAR";
+					init="GrpREB_C2 = group this;nul = [""aar"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={1407.4071,2.8539281,586.63452};
+					id=1434;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_C2_AT";
+					init="GrpREB_C2 = group this;nul = [""rat"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item426
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1395.2893,2.8539281,578.75549};
+					id=1435;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_C3_FTL";
+					init="GrpREB_C3 = group this;nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={1398.8906,2.8539281,574.20715};
+					id=1436;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_C3_AR";
+					init="GrpREB_C3 = group this;nul = [""ar"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={1403.1997,2.8539281,574.07898};
+					id=1437;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_C3_AAR";
+					init="GrpREB_C3 = group this;nul = [""aar"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={1407.4133,2.8539281,573.90686};
+					id=1438;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_C3_AT";
+					init="GrpREB_C3 = group this;nul = [""rat"",this] call f_fnc_assignGear;";
+					description="African Rebels Charlie 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item427
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1435.8875,512.83362,632.79498};
+					id=1439;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_MMG1_G";
+					init="GrpREB_MMG1 = group this;nul = [""mmgg"",this] call f_fnc_assignGear;";
+					description="African Rebels Medium MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={1438.8514,510.95331,631.04388};
+					id=1440;
+					side="EAST";
+					vehicle="ibr_rebel55";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_MMG1_AG";
+					init="GrpREB_MMG1 = group this;nul = [""mmgag"",this] call f_fnc_assignGear;";
+					description="African Rebels Medium MG Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item428
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1448.2786,507.78253,633.90045};
+					id=1441;
+					side="EAST";
+					vehicle="ibr_rebel132";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_ST1_SN";
+					init="GrpREB_ST1 = group this;nul = [""sn"",this] call f_fnc_assignGear;";
+					description="African Rebels Sniper Team 1 Sniper";
+				};
+				class Item1
+				{
+					position[]={1451.3076,505.81314,631.9259};
+					id=1442;
+					side="EAST";
+					vehicle="ibr_rebel132";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_ST1_SP";
+					init="GrpREB_ST1 = group this;nul = [""sp"",this] call f_fnc_assignGear;";
+					description="African Rebels Sniper Team 1 Spotter";
+				};
+			};
+		};
+		class Item429
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={1436.7825,508.41815,622.36932};
+					id=1443;
+					side="EAST";
+					vehicle="ibr_rebel125";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_HMG1_G";
+					init="GrpREB_HMG1 = group this;nul = [""hmgg"",this] call f_fnc_assignGear;";
+					description="African Rebels Heavy MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={1434.5968,508.33984,619.83478};
+					id=1444;
+					side="EAST";
+					vehicle="ibr_rebel33";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_HMG1_AG";
+					init="GrpREB_HMG1 = group this;nul = [""hmgag"",this] call f_fnc_assignGear;";
+					description="African Rebels Heavy MG Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={1438.8473,506.44839,619.77905};
+					id=1445;
+					side="EAST";
+					vehicle="ibr_rebel33";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_HMG1_AC";
+					init="GrpREB_HMG1 = group this;nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="African Rebels Heavy MG Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item430
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={1436.5762,504.3266,612.41223};
+					id=1446;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_MAT1_G";
+					init="GrpREB_MAT1 = group this;nul = [""matg"",this] call f_fnc_assignGear;";
+					description="African Rebels Medium AT Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={1433.5734,504.54065,609.80676};
+					id=1447;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_MAT1_AG";
+					init="GrpREB_MAT1 = group this;nul = [""matag"",this] call f_fnc_assignGear;";
+					description="African Rebels Medium AT Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={1439.1376,502.17459,609.85114};
+					id=1448;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_MAT1_AC";
+					init="GrpREB_MAT1 = group this;nul = [""matag"",this] call f_fnc_assignGear;";
+					description="African Rebels Medium AT Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item431
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={1436.6392,499.14072,599.83673};
+					id=1449;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_HAT1_G";
+					init="GrpREB_HAT1 = group this;nul = [""hatg"",this] call f_fnc_assignGear;";
+					description="African Rebels Heavy AT Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={1439.5652,497.02042,597.31372};
+					id=1451;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_HAT1_AC";
+					init="GrpREB_HAT1 = group this;nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="African Rebels Heavy AT Team 1 Ammo Carrier";
+				};
+				class Item2
+				{
+					position[]={1433.9193,499.31927,597.1803};
+					id=1450;
+					side="EAST";
+					vehicle="ibr_rebel95";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_HAT1_AG";
+					init="GrpREB_HAT1 = group this;nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="African Rebels Heavy AT Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item432
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={1436.3682,495.60693,589.10754};
+					id=1452;
+					side="EAST";
+					vehicle="ibr_rebel111";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_SAM1_G";
+					init="GrpREB_SAM1 = group this;nul = [""samg"",this] call f_fnc_assignGear;";
+					description="African Rebels SAM Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={1438.9084,493.65961,586.1145};
+					id=1454;
+					side="EAST";
+					vehicle="ibr_rebel111";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_SAM1_AC";
+					init="GrpREB_SAM1 = group this;nul = [""samag"",this] call f_fnc_assignGear;";
+					description="African Rebels SAM Team 1 Ammo Carrier";
+				};
+				class Item2
+				{
+					position[]={1433.3741,495.88498,585.93213};
+					id=1453;
+					side="EAST";
+					vehicle="ibr_rebel111";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_SAM1_AG";
+					init="GrpREB_SAM1 = group this;nul = [""samag"",this] call f_fnc_assignGear;";
+					description="African Rebels SAM Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item433
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={1450.0315,503.19327,623.81213};
+					id=1455;
+					side="EAST";
+					vehicle="ibr_rebel44";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_MTR1_G";
+					init="GrpREB_MTR1 = group this;nul = [""mtrg"",this] call f_fnc_assignGear;";
+					description="African Rebels Mortar Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={1448.5157,503.24515,622.35266};
+					id=1456;
+					side="EAST";
+					vehicle="ibr_rebel44";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_MTR1_AG";
+					init="GrpREB_MTR1 = group this;nul = [""mtrag"",this] call f_fnc_assignGear;";
+					description="African Rebels Mortar Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={1451.6033,501.98505,622.46478};
+					id=1457;
+					side="EAST";
+					vehicle="ibr_rebel44";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_MTR1_AC";
+					init="GrpREB_MTR1 = group this;nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="African Rebels Mortar Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item434
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1448.7479,500.9361,616.8053};
+					id=1458;
+					side="EAST";
+					vehicle="ibr_rebel44";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitREB_ENG1_FTL";
+					init="GrpREB_ENG1 = group this;nul = [""eng"",this] call f_fnc_assignGear;";
+					description="African Rebels Engineer Team 1 Leader";
+				};
+				class Item1
+				{
+					position[]={1451.1875,499.41034,615.56097};
+					id=1459;
+					side="EAST";
+					vehicle="ibr_rebel44";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitREB_ENG1_A";
+					init="GrpREB_ENG1 = group this;nul = [""eng"",this] call f_fnc_assignGear;";
+					description="African Rebels Engineer Team 1 Assistant";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -23253,7 +24258,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=20;
+		items=21;
 		class Item0
 		{
 			position[]={792.09558,334.87872,1972.5048};
@@ -23434,13 +24439,23 @@ class Mission
 			a=0;
 			b=0;
 		};
+		class Item20
+		{
+			position[]={1545.5566,5.4741774,566.23486};
+			name="1_3_1_1";
+			text="Afr Rebels";
+			type="Empty";
+			a=0;
+			b=0;
+		};
 	};
 };
 class Intro
 {
 	addOns[]=
 	{
-		"takistan"
+		"takistan",
+		"ibr_isladuala"
 	};
 	addOnsAuto[]=
 	{
@@ -23461,7 +24476,8 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"takistan"
+		"takistan",
+		"ibr_isladuala"
 	};
 	addOnsAuto[]=
 	{
@@ -23482,7 +24498,8 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"takistan"
+		"takistan",
+		"ibr_isladuala"
 	};
 	addOnsAuto[]=
 	{
