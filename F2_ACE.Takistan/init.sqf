@@ -91,15 +91,34 @@ f_script_setTeamColours = [] execVM "f\common\markers\f_setTeamColours.sqf";
 
 [] execVM "f\common\safestart\f_safeStart.sqf";
 
-
 // ====================================================================================
 
-// F2_ACE - Mission Timer/Safe Start
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f2/en/)
+// F2_ACE - JIP ACRE
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 []spawn {
-#include "f_waitForJip.sqf"
+
+	if (!isDedicated && (player != player)) then
+	{
+	    waitUntil {player == player};
+	    waitUntil {time > 10};
+	};
+
 sleep 10;
 waitUntil{!alive player};
 [true] call acre_api_fnc_setSpectator;
+
 };
+
+// ====================================================================================
+
+// DAC Init
+
+/*
+
+if(!isServer) then {waitUntil{!isNull player}};
+DAC_Zone = compile preprocessFile "DAC\Scripts\DAC_Init_Zone.sqf";
+DAC_Objects	= compile preprocessFile "DAC\Scripts\DAC_Create_Objects.sqf";
+execVM "DAC\DAC_Config_Creator.sqf";
+
+*/

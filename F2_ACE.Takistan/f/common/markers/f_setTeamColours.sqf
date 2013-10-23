@@ -23,7 +23,7 @@ private ["_unit","_isFireteam"];
 
 waitUntil{alive player}; // Wait for player to get in-game
 
-waitUntil{!isNil "ST_FTHud_Init"} // Wait for ST-Hud to begin initialising
+waitUntil{!isNil "ST_FTHud_Init"}; // Wait for ST-Hud to begin initialising
 
 sleep 10; // Give it 10 seconds, just in case
 
