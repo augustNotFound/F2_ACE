@@ -86,7 +86,6 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
-		_unit addWeapon _radio1;
 		_unit addWeapon _radio2;
 	};
   
@@ -106,7 +105,6 @@ switch (_typeofUnit) do
 // LOADOUT: FIRE TEAM LEADER
 	case "ftl":
 	{
-		_unit addWeapon _radio2;
 	};	
 
 
@@ -191,7 +189,6 @@ switch (_typeofUnit) do
 // LOADOUT: MORTAR GUNNER
 	case "mtrg":
 	{
-		_unit addWeapon _radio1;
 		_unit addWeapon _radio2;
 	};	
 	
@@ -217,17 +214,13 @@ switch (_typeofUnit) do
 	case "c":
 	{
 		if(leader group _unit == _unit) then {
-				_unit addWeapon _radio1;
-			};
-		_unit addWeapon _radio2;
+			_unit addWeapon _radio2;
+		};
 	};			
 	
 // LOADOUT: AIR VEHICLE PILOTS
 	case "p":
 	{
-		if(leader group _unit == _unit) then {
-				_unit addWeapon _radio1;
-			};
 		_unit addWeapon _radio2;				
 	};		
 	
@@ -235,7 +228,7 @@ switch (_typeofUnit) do
 	case "eng":
 	{
 		if(leader group _unit == _unit) then {
-				_unit addWeapon _radio2;
+			_unit addWeapon _radio2;
 		};	
 	};	
 		
