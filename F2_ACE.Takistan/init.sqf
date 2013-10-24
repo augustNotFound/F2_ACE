@@ -75,7 +75,7 @@ f_endSelected = -1;
 
 // F2_ACE - Friendly-Fire Logger (to .rpt)
 
-// face_script_ffLog = player addeventhandler ["HandleDamage",{_this execVM "f\common\face_handleDamage.sqf"}];
+face_script_ffLog = player addeventhandler ["HandleDamage",{_this execVM "f\common\face_handleDamage.sqf"}];
 
 // ====================================================================================
 
