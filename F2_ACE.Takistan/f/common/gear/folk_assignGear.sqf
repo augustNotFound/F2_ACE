@@ -218,12 +218,22 @@ if (_faction == "pmc_baf") then {
 
 // ====================================================================================
 
-// GEAR: REBELS
-// The following block of code executes only if the player is in a AFRICAN REBELS slot; it 
+// GEAR: AFRICAN REBELS
+// The following block of code executes only if the player is in an AFRICAN REBELS slot; it 
 //  automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "ibr_rebel_faction") then {
 #include "templates\folk_assignGear_AK107.sqf" // For now, as no seperate loadout for African Rebels available.
+};
+
+// ====================================================================================
+
+// GEAR: AFRENIAN ARMY
+// The following block of code executes only if the player is in an AFRENIAN ARMY slot; it 
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "afr_army") then {
+#include "templates\folk_assignGear_G36-noUGL.sqf" // For now, as no seperate loadout for Afrenian Army available.
 };
 
 // ====================================================================================
