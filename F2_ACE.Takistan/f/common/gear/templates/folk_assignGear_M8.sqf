@@ -249,7 +249,7 @@ switch (_typeofUnit) do
 		{_unit addmagazine _smokegrenade;} foreach [1];
 
 		_unit addWeapon _bagMedium;
-		[_unit, _RAAmag, 2] call ACE_fnc_PackMagazine;
+		[_unit, _RAAmag, 1] call ACE_fnc_PackMagazine;
 		
 	};				
 	
