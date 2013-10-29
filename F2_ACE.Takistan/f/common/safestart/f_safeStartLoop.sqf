@@ -10,3 +10,5 @@ if (isDedicated) exitWith {};
 		sleep 60;
 		pv_mission_timer = pv_mission_timer - 1;
 	};
+
+if (true) exitWith {hint "Mission Setup Time is over!"};
