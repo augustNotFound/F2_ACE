@@ -52,7 +52,11 @@ class Mission
 		"ace_c_vehicle",
 		"acex_veh_stryker",
 		"ibr_civilian_patch",
-		"ibr_isladuala"
+		"ibr_isladuala",
+		"Afrenian_Army",
+		"Afrenian_Cars",
+		"Afrenian_Armor",
+		"afraf_air"
 	};
 	addOnsAuto[]=
 	{
@@ -71,6 +75,7 @@ class Mission
 		"ace_c_men",
 		"CACharacters_BAF",
 		"ibr_civilian_patch",
+		"Afrenian_Army",
 		"CAWheeled2_BTR90",
 		"ace_c_vehicle",
 		"caair",
@@ -99,6 +104,8 @@ class Mission
 		"CAWheeled2_V3S",
 		"cawheeled_e_v3s",
 		"CAWheeled2_MTVR",
+		"Afrenian_Armor",
+		"afraf_air",
 		"takistan"
 	};
 	randomSeed=3165154;
@@ -116,7 +123,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=435;
+		items=464;
 		class Item0
 		{
 			side="WEST";
@@ -209,7 +216,6 @@ class Mission
 					id=4;
 					side="CIV";
 					vehicle="Haris_Press_EP1";
-					player="PLAYER COMMANDER";
 					leader=1;
 					rank="COLONEL";
 					skill=0.5;
@@ -22158,10 +22164,1292 @@ class Mission
 				};
 			};
 		};
+		class Item435
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={528.87012,522.69171,762.6228};
+					id=1460;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_CO";
+					init="GrpAFR_CO = group this; nul = [""co"", this] call f_fnc_assignGear;";
+					description="Afrenian Army Commander";
+				};
+				class Item1
+				{
+					position[]={535.26746,527.28394,758.59369};
+					id=1461;
+					side="WEST";
+					vehicle="AFR_Soldier_Medic";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_CO_M";
+					init="GrpAFR_CO = group this; nul = [""m"", this] call f_fnc_assignGear;";
+					description="Afrenian Army Medic";
+				};
+			};
+		};
+		class Item436
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={528.39618,531.46985,738.93042};
+					id=1462;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_DC";
+					init="GrpAFR_DC = group this; nul = [""dc"", this] call f_fnc_assignGear;";
+					description="Afrenian Army Deputy Commander";
+				};
+				class Item1
+				{
+					position[]={534.79352,536.3653,734.90131};
+					id=1463;
+					side="WEST";
+					vehicle="AFR_Soldier_Medic";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_DC_M";
+					init="GrpAFR_DC = group this; nul = [""m"", this] call f_fnc_assignGear;";
+					description="Afrenian Army Medic";
+				};
+			};
+		};
+		class Item437
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={538.34766,550.55176,701.25726};
+					id=1464;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_ASL";
+					init="GrpAFR_ASL = group this; nul = [""dc"", this] call f_fnc_assignGear;";
+					description="Afrenian Army Alpha Squad Leader";
+				};
+				class Item1
+				{
+					position[]={544.745,554.99445,697.22815};
+					id=1465;
+					side="WEST";
+					vehicle="AFR_Soldier_Medic";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_ASL_M";
+					init="GrpAFR_ASL = group this; nul = [""m"", this] call f_fnc_assignGear;";
+					description="Afrenian Army Alpha Medic";
+				};
+			};
+		};
+		class Item438
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={576.96893,570.53174,701.49451};
+					id=1466;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_BSL";
+					init="GrpAFR_BSL = group this; nul = [""dc"", this] call f_fnc_assignGear;";
+					description="Afrenian Army Bravo Squad Leader";
+				};
+				class Item1
+				{
+					position[]={583.36627,574.40759,697.46539};
+					id=1467;
+					side="WEST";
+					vehicle="AFR_Soldier_Medic";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_BSL_M";
+					init="GrpAFR_BSL = group this; nul = [""m"", this] call f_fnc_assignGear;";
+					description="Afrenian Army Bravo Medic";
+				};
+			};
+		};
+		class Item439
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={609.90375,584.17725,701.49451};
+					id=1468;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_CSL";
+					init="GrpAFR_CSL = group this; nul = [""dc"", this] call f_fnc_assignGear;";
+					description="Afrenian Army Charlie Squad Leader";
+				};
+				class Item1
+				{
+					position[]={616.30109,586.86792,697.46539};
+					id=1469;
+					side="WEST";
+					vehicle="AFR_Soldier_Medic";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_CSL_M";
+					init="GrpAFR_CSL = group this; nul = [""m"", this] call f_fnc_assignGear;";
+					description="Afrenian Army Charlie Medic";
+				};
+			};
+		};
+		class Item440
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={535.13037,554.48315,680.18951};
+					id=1470;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_A1_FTL";
+					init="GrpAFR_A1 = group this;";
+					description="Afrenian Army Alpha 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={544.95355,560.11096,676.0849};
+					id=1473;
+					side="WEST";
+					vehicle="AFR_Soldier_LAT";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_A1_AT";
+					init="GrpAFR_A1 = group this;";
+					description="Afrenian Army Alpha 1 Rifleman (AT)";
+				};
+				class Item2
+				{
+					position[]={540.6665,558.07947,676.03534};
+					id=1472;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_A1_AAR";
+					init="GrpAFR_A1 = group this;";
+					description="Afrenian Army Alpha 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={537.4762,556.53302,676.23059};
+					id=1471;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_A1_AR";
+					init="GrpAFR_A1 = group this;";
+					description="Afrenian Army Alpha 1 Automatic Rifleman";
+				};
+			};
+		};
+		class Item441
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={535.13031,558.65668,664.4928};
+					id=1474;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_A2_FTL";
+					init="GrpAFR_A2 = group this;";
+					description="Afrenian Army Alpha 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={544.95349,563.99951,660.38818};
+					id=1477;
+					side="WEST";
+					vehicle="AFR_Soldier_LAT";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_A2_AT";
+					init="GrpAFR_A2 = group this;";
+					description="Afrenian Army Alpha 2 Rifleman (AT)";
+				};
+				class Item2
+				{
+					position[]={541.42603,562.51263,660.46606};
+					id=1476;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_A2_AAR";
+					init="GrpAFR_A2 = group this;";
+					description="Afrenian Army Alpha 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={537.47614,560.85541,660.53387};
+					id=1475;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_A2_AR";
+					init="GrpAFR_A2 = group this;";
+					description="Afrenian Army Alpha 2 Automatic Rifleman";
+				};
+			};
+		};
+		class Item442
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={535.32019,566.24243,645.12482};
+					id=1478;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_A3_FTL";
+					init="GrpAFR_A3 = group this;";
+					description="Afrenian Army Alpha 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={545.14337,571.76392,641.0202};
+					id=1481;
+					side="WEST";
+					vehicle="AFR_Soldier_LAT";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_A3_AT";
+					init="GrpAFR_A3 = group this;";
+					description="Afrenian Army Alpha 3 Rifleman (AT)";
+				};
+				class Item2
+				{
+					position[]={541.17279,570.3609,640.90729};
+					id=1480;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_A3_AAR";
+					init="GrpAFR_A3 = group this;";
+					description="Afrenian Army Alpha 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={537.66602,568.9928,641.16589};
+					id=1479;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_A3_AR";
+					init="GrpAFR_A3 = group this;";
+					description="Afrenian Army Alpha 3 Automatic Rifleman";
+				};
+			};
+		};
+		class Item443
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={572.72845,572.29242,680.99744};
+					id=1482;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_B1_FTL";
+					init="GrpAFR_B1 = group this;";
+					description="Afrenian Army Bravo 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={582.55164,577.31952,676.89282};
+					id=1485;
+					side="WEST";
+					vehicle="AFR_Soldier_LAT";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_B1_AT";
+					init="GrpAFR_B1 = group this;";
+					description="Afrenian Army Bravo 1 Rifleman (AT)";
+				};
+				class Item2
+				{
+					position[]={578.26459,575.495,676.84326};
+					id=1484;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_B1_AAR";
+					init="GrpAFR_B1 = group this;";
+					description="Afrenian Army Bravo 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={575.07428,574.10645,677.03851};
+					id=1483;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_B1_AR";
+					init="GrpAFR_B1 = group this;";
+					description="Afrenian Army Bravo 1 Automatic Rifleman";
+				};
+			};
+		};
+		class Item444
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={572.36548,574.75562,666.57178};
+					id=1486;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_B2_FTL";
+					init="GrpAFR_B2 = group this;";
+					description="Afrenian Army Bravo 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={582.18866,579.34851,662.46716};
+					id=1489;
+					side="WEST";
+					vehicle="AFR_Soldier_LAT";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_B2_AT";
+					init="GrpAFR_B2 = group this;";
+					description="Afrenian Army Bravo 2 Rifleman (AT)";
+				};
+				class Item2
+				{
+					position[]={577.90161,577.79327,662.4176};
+					id=1488;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_B2_AAR";
+					init="GrpAFR_B2 = group this;";
+					description="Afrenian Army Bravo 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={574.7113,576.5567,662.61285};
+					id=1487;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_B2_AR";
+					init="GrpAFR_B2 = group this;";
+					description="Afrenian Army Bravo 2 Automatic Rifleman";
+				};
+			};
+		};
+		class Item445
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={572.45624,579.66467,647.88281};
+					id=1490;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_B3_FTL";
+					init="GrpAFR_B3 = group this;";
+					description="Afrenian Army Bravo 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={582.27942,584.51062,643.7782};
+					id=1493;
+					side="WEST";
+					vehicle="AFR_Soldier_LAT";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_B3_AT";
+					init="GrpAFR_B3 = group this;";
+					description="Afrenian Army Bravo 3 Rifleman (AT)";
+				};
+				class Item2
+				{
+					position[]={577.99237,583.13806,643.72864};
+					id=1492;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_B3_AAR";
+					init="GrpAFR_B3 = group this;";
+					description="Afrenian Army Bravo 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={574.80206,581.99969,643.92389};
+					id=1491;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_B3_AR";
+					init="GrpAFR_B3 = group this;";
+					description="Afrenian Army Bravo 3 Automatic Rifleman";
+				};
+			};
+		};
+		class Item446
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={605.82861,585.65747,681.80542};
+					id=1494;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_C1_FTL";
+					init="GrpAFR_C1 = group this;";
+					description="Afrenian Army Charlie 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={615.65179,589.20172,677.70081};
+					id=1497;
+					side="WEST";
+					vehicle="AFR_Soldier_LAT";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_C1_AT";
+					init="GrpAFR_C1 = group this;";
+					description="Afrenian Army Charlie 1 Rifleman (AT)";
+				};
+				class Item2
+				{
+					position[]={611.36475,588.0932,677.65125};
+					id=1496;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_C1_AAR";
+					init="GrpAFR_C1 = group this;";
+					description="Afrenian Army Charlie 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={608.17444,586.91333,677.8465};
+					id=1495;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_C1_AR";
+					init="GrpAFR_C1 = group this;";
+					description="Afrenian Army Charlie 1 Automatic Rifleman";
+				};
+			};
+		};
+		class Item447
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={606.19153,587.16785,667.47278};
+					id=1498;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_C2_FTL";
+					init="GrpAFR_C2 = group this;";
+					description="Afrenian Army Charlie 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={616.01471,590.60596,663.36816};
+					id=1501;
+					side="WEST";
+					vehicle="AFR_Soldier_LAT";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_C2_AT";
+					init="GrpAFR_C2 = group this;";
+					description="Afrenian Army Charlie 2 Rifleman (AT)";
+				};
+				class Item2
+				{
+					position[]={611.72766,589.58099,663.3186};
+					id=1500;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_C2_AAR";
+					init="GrpAFR_C2 = group this;";
+					description="Afrenian Army Charlie 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={608.53735,588.39398,663.51385};
+					id=1499;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_C2_AR";
+					init="GrpAFR_C2 = group this;";
+					description="Afrenian Army Charlie 2 Automatic Rifleman";
+				};
+			};
+		};
+		class Item448
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={603.40576,589.41614,649.14618};
+					id=1502;
+					side="WEST";
+					vehicle="AFR_Officer";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_C3_FTL";
+					init="GrpAFR_C3 = group this;";
+					description="Afrenian Army Charlie 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={613.22894,593.24072,645.04156};
+					id=1505;
+					side="WEST";
+					vehicle="AFR_Soldier_LAT";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_C3_AT";
+					init="GrpAFR_C3 = group this;";
+					description="Afrenian Army Charlie 3 Rifleman (AT)";
+				};
+				class Item2
+				{
+					position[]={608.94189,592.07831,644.992};
+					id=1504;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_C3_AAR";
+					init="GrpAFR_C3 = group this;";
+					description="Afrenian Army Charlie 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={605.75159,591.11346,645.18726};
+					id=1503;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_C3_AR";
+					init="GrpAFR_C3 = group this;";
+					description="Afrenian Army Charlie 3 Automatic Rifleman";
+				};
+			};
+		};
+		class Item449
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={649.76892,584.74017,702.23004};
+					id=1511;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_MMG1_G";
+					init="GrpAFR_MMG1 = group this; nul = [""mmgg"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Medium MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={654.56281,585.24597,698.75867};
+					id=1512;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_MMG1_AG";
+					init="GrpAFR_MMG1 = group this; nul = [""mmgag"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Medium MG Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item450
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={667.42902,581.61072,702.69623};
+					id=1513;
+					side="WEST";
+					vehicle="AFR_Soldier_Sniper";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_ST1_SN";
+					init="GrpAFR_ST1 = group this; nul = [""sn"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Sniper Team 1 Sniper";
+				};
+				class Item1
+				{
+					position[]={671.72015,582.21698,698.79608};
+					id=1514;
+					side="WEST";
+					vehicle="AFR_Soldier_Sniper";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_ST1_SP";
+					init="GrpAFR_ST1 = group this; nul = [""sp"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Sniper Team 1 Spotter";
+				};
+			};
+		};
+		class Item451
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={648.68561,589.20697,685.65442};
+					id=1515;
+					side="WEST";
+					vehicle="AFR_Soldier_MG";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_HMG1_G";
+					init="GrpAFR_HMG1 = group this; nul = [""hmgg"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Heavy MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={652.19659,589.91547,681.88245};
+					id=1516;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_HMG1_AG";
+					init="GrpAFR_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Heavy MG Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={646.20197,590.07025,681.59637};
+					id=1517;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_HMG1_AC";
+					init="GrpAFR_HMG1 = group this; nul = [""hmgac"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Heavy MG Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item452
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={649.1673,593.47522,667.98547};
+					id=1518;
+					side="WEST";
+					vehicle="AFR_Soldier_HAT";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_MAT1_G";
+					init="GrpAFR_MAT1 = group this; nul = [""matg"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Medium AT Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={646.3031,593.91211,665.53033};
+					id=1520;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_MAT1_AC";
+					init="GrpAFR_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Medium AT Team 1 Ammo Carrier";
+				};
+				class Item2
+				{
+					position[]={651.92914,594.00934,665.83704};
+					id=1519;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_MAT1_AG";
+					init="GrpAFR_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Medium AT Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item453
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={649.07758,595.60284,658.3916};
+					id=1521;
+					side="WEST";
+					vehicle="AFR_Soldier_HAT";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_HAT1_G";
+					init="GrpAFR_HAT1 = group this; nul = [""hatg"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Heavy AT Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={651.79865,596.11462,655.56116};
+					id=1522;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_HAT1_AG";
+					init="GrpAFR_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Heavy AT Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={646.71625,595.836,655.5871};
+					id=1523;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_HAT1_AC";
+					init="GrpAFR_HAT1 = group this; nul = [""hatag"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Heavy AT Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item454
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={649.09894,597.13257,645.60632};
+					id=1524;
+					side="WEST";
+					vehicle="AFR_Soldier_Igla";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_SAM1_G";
+					init="GrpAFR_SAM1 = group this; nul = [""samg"",this] call f_fnc_assignGear;";
+					description="Afrenian Army SAM Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={652.51971,597.22528,643.34802};
+					id=1526;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_SAM1_AG";
+					init="GrpAFR_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="Afrenian Army SAM Team 1 Assistant Gunner";
+				};
+				class Item2
+				{
+					position[]={645.82843,597.05988,642.73914};
+					id=1525;
+					side="WEST";
+					vehicle="AFR_Soldier_GL";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_SAM1_AC";
+					init="GrpAFR_SAM1 = group this; nul = [""samag"",this] call f_fnc_assignGear;";
+					description="Afrenian Army SAM Team 1 Ammo Carrier";
+				};
+			};
+		};
+		class Item455
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={669.38702,586.53625,686.26709};
+					id=1527;
+					side="WEST";
+					vehicle="AFR_Soldier_Rifleman";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_MTR1_G";
+					init="GrpAFR_MTR1 = group this; nul = [""mtrg"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Mortar Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={666.86908,587.96185,682.75763};
+					id=1528;
+					side="WEST";
+					vehicle="AFR_Soldier_Rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_MTR1_AC";
+					init="GrpAFR_MTR1 = group this; nul = [""mtrac"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Mortar Team 1 Ammo Carrier";
+				};
+				class Item2
+				{
+					position[]={671.88153,586.7774,683.69214};
+					id=1529;
+					side="WEST";
+					vehicle="AFR_Soldier_Rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_MTR1_AG";
+					init="GrpAFR_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Mortar Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item456
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={668.75354,591.55933,668.71112};
+					id=1530;
+					side="WEST";
+					vehicle="AFR_Soldier_Engineer";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_ENG1_FTL";
+					init="GrpAFR_ENG1 = group this; nul = [""eng"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Engineer Team 1 Leader";
+				};
+				class Item1
+				{
+					position[]={671.98163,591.49786,666.68475};
+					id=1531;
+					side="WEST";
+					vehicle="AFR_Soldier_Engineer";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_ENG1_A";
+					init="GrpAFR_ENG1 = group this; nul = [""eng"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Engineer Team 1 Assistant";
+				};
+			};
+		};
+		class Item457
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={604.26758,600.31848,602.90527};
+					id=1532;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_TNK1_C";
+					init="GrpAFR_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Tank 1 Commander";
+				};
+				class Item1
+				{
+					position[]={608.85596,600.93347,600.76147};
+					id=1534;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_TNK1_G";
+					init="GrpAFR_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Tank 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={606.44489,600.82135,600.72784};
+					id=1533;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_TNK1_D";
+					init="GrpAFR_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Tank 1 Driver";
+				};
+			};
+		};
+		class Item458
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={666.9458,592.58063,603.52783};
+					id=1539;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_AH1_P";
+					init="GrpAFR_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Attack Helo 1 Pilot";
+				};
+				class Item1
+				{
+					position[]={669.5907,591.29846,601.54425};
+					id=1540;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_AH1_G";
+					init="GrpAFR_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="Afrenian Army Attack Helo 1 Gunner";
+				};
+			};
+		};
+		class Item459
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={580.5307,594.38647,612.80212};
+					id=1545;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_IFV3_C";
+					init="GrpAFR_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army IFV 3 Commander";
+				};
+				class Item1
+				{
+					position[]={585.11908,596.00311,610.65833};
+					id=1547;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_IFV3_G";
+					init="GrpAFR_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army IFV 3 Gunner";
+				};
+				class Item2
+				{
+					position[]={582.70801,595.55908,610.62469};
+					id=1546;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_IFV3_D";
+					init="GrpAFR_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army IFV 3 Driver";
+				};
+			};
+		};
+		class Item460
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={557.92029,588.26807,613.36517};
+					id=1548;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_IFV2_C";
+					init="GrpAFR_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army IFV 2 Commander";
+				};
+				class Item1
+				{
+					position[]={562.50867,590.49567,611.22137};
+					id=1550;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_IFV2_G";
+					init="GrpAFR_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army IFV 2 Gunner";
+				};
+				class Item2
+				{
+					position[]={560.0976,589.80353,611.18774};
+					id=1549;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_IFV2_D";
+					init="GrpAFR_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army IFV 2 Driver";
+				};
+			};
+		};
+		class Item461
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={535.95367,581.62543,614.5722};
+					id=1551;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitAFR_IFV1_C";
+					init="GrpAFR_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army IFV 1 Commander";
+				};
+				class Item1
+				{
+					position[]={540.54205,583.81866,612.42841};
+					id=1553;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_IFV1_G";
+					init="GrpAFR_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army IFV 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={538.04266,583.20697,612.39478};
+					id=1552;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_IFV1_D";
+					init="GrpAFR_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="Afrenian Army IFV 1 Driver";
+				};
+			};
+		};
+		class Item462
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={631.53119,599.495,603.7522};
+					id=1556;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_TH1_P";
+					init="GrpAFR_TH1 = group this;";
+					description="Afrenian Army Transport Helo 1 Pilot";
+				};
+			};
+		};
+		class Item463
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={647.79803,597.58734,603.94299};
+					id=1557;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitAFR_TH2_P";
+					init="GrpAFR_TH2 = group this;";
+					description="Afrenian Army Transport Helo 2 Pilot";
+				};
+				class Item1
+				{
+					position[]={648.81635,597.31934,603.12054};
+					id=1558;
+					side="WEST";
+					vehicle="AFR_Soldier_Crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitAFR_TH2_C";
+					init="GrpAFR_TH2 = group this;";
+					description="Afrenian Army Transport Helo 2 Crewman";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=195;
+		items=210;
 		class Item0
 		{
 			position[]={1284.1877,320.21695,1897.8463};
@@ -22655,11 +23943,11 @@ class Mission
 		class Item46
 		{
 			position[]={617.98999,490.01126,872.59204};
-			azimut=1.4615065;
+			azimut=1.4615099;
 			id=518;
 			side="EMPTY";
 			vehicle="M2A2_EP1";
-			skill=0.1;
+			skill=0.2;
 			text="US_IFV3";
 			init="nul = [""v_ifv"",this] call f_fnc_assignGear;";
 		};
@@ -23470,7 +24758,7 @@ class Mission
 			id=1205;
 			side="EMPTY";
 			vehicle="HMMWV_DES_EP1";
-			skill=0.1;
+			skill=0.2;
 			text="US_CAR1";
 			init="nul = [""v_car"",this] call f_fnc_assignGear;";
 		};
@@ -24255,10 +25543,162 @@ class Mission
 			text="INS_TR3";
 			init="nul = [""v_tr"",this] call f_fnc_assignGear;";
 		};
+		class Item195
+		{
+			position[]={520.93103,516.90613,767.92755};
+			id=1506;
+			side="EMPTY";
+			vehicle="HMMWV_DES_EP1";
+			skill=0.60000002;
+			text="AFR_CAR1";
+			init="nul = [""v_car"",this] call f_fnc_assignGear;";
+		};
+		class Item196
+		{
+			position[]={521.45117,526.4986,742.44147};
+			id=1507;
+			side="EMPTY";
+			vehicle="HMMWV_DES_EP1";
+			skill=0.60000002;
+			text="AFR_CAR2";
+			init="nul = [""v_car"",this] call f_fnc_assignGear;";
+		};
+		class Item197
+		{
+			position[]={529.32593,551.112,683.43878};
+			id=1508;
+			side="EMPTY";
+			vehicle="MTVR_DES_EP1";
+			skill=0.60000002;
+			text="AFR_TR1";
+			init="nul = [""v_tr"",this] call f_fnc_assignGear;";
+		};
+		class Item198
+		{
+			position[]={567.55646,569.57697,682.52869};
+			id=1509;
+			side="EMPTY";
+			vehicle="MTVR_DES_EP1";
+			skill=0.60000002;
+			text="AFR_TR2";
+			init="nul = [""v_tr"",this] call f_fnc_assignGear;";
+		};
+		class Item199
+		{
+			position[]={599.85583,583.25641,682.45697};
+			id=1510;
+			side="EMPTY";
+			vehicle="MTVR_DES_EP1";
+			skill=0.60000002;
+			text="AFR_TR3";
+			init="nul = [""v_tr"",this] call f_fnc_assignGear;";
+		};
+		class Item200
+		{
+			position[]={607.54327,599.68835,611.13965};
+			id=1535;
+			side="EMPTY";
+			vehicle="ibr_LEO1A5";
+			leader=1;
+			skill=0.60000002;
+			text="AFR_TNK1";
+		};
+		class Item201
+		{
+			position[]={530.04712,545.64587,703.26373};
+			id=1536;
+			side="EMPTY";
+			vehicle="HMMWV_DES_EP1";
+			skill=0.60000002;
+			text="AFR_CAR3";
+			init="nul = [""v_car"",this] call f_fnc_assignGear;";
+		};
+		class Item202
+		{
+			position[]={568.06799,565.76843,701.77606};
+			id=1537;
+			side="EMPTY";
+			vehicle="HMMWV_DES_EP1";
+			skill=0.60000002;
+			text="AFR_CAR4";
+			init="nul = [""v_car"",this] call f_fnc_assignGear;";
+		};
+		class Item203
+		{
+			position[]={602.28674,580.7287,703.36749};
+			id=1538;
+			side="EMPTY";
+			vehicle="HMMWV_DES_EP1";
+			skill=0.60000002;
+			text="AFR_CAR5";
+			init="nul = [""v_car"",this] call f_fnc_assignGear;";
+		};
+		class Item204
+		{
+			position[]={668.61859,593.30603,609.90753};
+			id=1541;
+			side="EMPTY";
+			vehicle="ibr_as350_armed";
+			leader=1;
+			skill=0.60000002;
+			text="AFR_AH1";
+			description="Afrenian Army Attack Helo 1 Gunner";
+		};
+		class Item205
+		{
+			position[]={584.63159,592.62805,620.9892};
+			id=1542;
+			side="EMPTY";
+			vehicle="M6_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="AFR_IFV3";
+			init="nul = [""v_ifv"",this] call f_fnc_assignGear;";
+		};
+		class Item206
+		{
+			position[]={561.17316,586.09143,620.9892};
+			id=1543;
+			side="EMPTY";
+			vehicle="M6_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="AFR_IFV2";
+			init="nul = [""v_ifv"",this] call f_fnc_assignGear;";
+		};
+		class Item207
+		{
+			position[]={539.7674,579.29877,621.57513};
+			id=1544;
+			side="EMPTY";
+			vehicle="M6_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="AFR_IFV1";
+			init="nul = [""v_ifv"",this] call f_fnc_assignGear;";
+		};
+		class Item208
+		{
+			position[]={650.02216,598.45081,611.57764};
+			id=1554;
+			side="EMPTY";
+			vehicle="CH_47F_EP1";
+			skill=0.60000002;
+			text="AFR_TH2";
+		};
+		class Item209
+		{
+			position[]={632.79712,599.55756,610.14404};
+			id=1555;
+			side="EMPTY";
+			vehicle="ibr_as350";
+			skill=0.60000002;
+			text="AFR_TH1";
+		};
 	};
 	class Markers
 	{
-		items=21;
+		items=22;
 		class Item0
 		{
 			position[]={792.09558,334.87872,1972.5048};
@@ -24444,6 +25884,15 @@ class Mission
 			position[]={1545.5566,5.4741774,566.23486};
 			name="1_3_1_1";
 			text="Afr Rebels";
+			type="Empty";
+			a=0;
+			b=0;
+		};
+		class Item21
+		{
+			position[]={823.53717,550.46552,594.09033};
+			name="1_3_2_4_1";
+			text="Afr Army";
 			type="Empty";
 			a=0;
 			b=0;
