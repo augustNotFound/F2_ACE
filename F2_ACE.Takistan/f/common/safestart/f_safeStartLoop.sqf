@@ -7,5 +7,6 @@ if (isDedicated) exitWith {};
 	while {pv_mission_timer > 0} do
 	{
 		hintsilent format ["Mission Setup\nTime Remaining: %1\n", pv_mission_timer];
-		sleep 5;
+		sleep 60;
+		pv_mission_timer = pv_mission_timer - 1;
 	};
