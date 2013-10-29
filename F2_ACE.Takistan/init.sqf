@@ -96,19 +96,7 @@ f_script_setTeamColours = [] execVM "f\common\markers\f_setTeamColours.sqf";
 // F2_ACE - JIP ACRE
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-[]spawn {
-
-	if (!isDedicated && (player != player)) then
-	{
-	    waitUntil {player == player};
-	    waitUntil {time > 10};
-	};
-
-sleep 10;
-waitUntil{!alive player};
-[true] call acre_api_fnc_setSpectator;
-
-};
+[] execVM "f\common\face_jipacre.sqf";
 
 // ====================================================================================
 
