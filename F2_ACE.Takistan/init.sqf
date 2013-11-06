@@ -110,3 +110,10 @@ DAC_Objects	= compile preprocessFile "DAC\Scripts\DAC_Create_Objects.sqf";
 execVM "DAC\DAC_Config_Creator.sqf";
 
 */
+
+// ====================================================================================
+
+// F2_ACE - Night Vision Toggle
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+face_script_nvtoggle = [] execVM "f\common\face_nightvisiontoggle.sqf";
