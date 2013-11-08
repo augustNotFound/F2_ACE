@@ -76,6 +76,20 @@ class Params
 		default = 0;
 		code = "f_param_weather = %1";
         };
+		
+// ============================================================================================
+
+// F3 - Night Vision Goggle Toggle
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
+
+		class f_param_nightvision_goggles
+		{
+			title = "Night Vision Goggles";
+			values[] = {0,1};
+			texts[] = {"On","Off"};
+			default = 1;
+			code = "f_var_nightvision_goggles = %1";
+		};
 
 // ============================================================================================
 
