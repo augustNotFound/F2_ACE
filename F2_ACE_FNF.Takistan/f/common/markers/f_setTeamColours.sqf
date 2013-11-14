@@ -38,7 +38,7 @@ _unit = player;
 // CHECK GROUP SIZE
 // If the group isn't a full fireteam, leave teams as default.
 
-if( (count (units (group _unit))) != 4 ) exitWith {};
+if( (count (units (group _unit))) != 5 ) exitWith {};
 
 _result = [format["%1",(leader (group _unit))], "_FTL"] call CBA_fnc_find;
 if(_result < 0) exitWith {};
@@ -49,8 +49,9 @@ if(_result < 0) exitWith {};
 	if( (([format["%1",(vehicle _x)], "_AR"] call CBA_fnc_find) > 0) || (([format["%1", (vehicle _x)], "_AAR"] call CBA_fnc_find) > 0) ) then
 	{
 		_x assignTeam "BLUE";
-	}
-	else
+	};
+	
+	if( (([format["%1",(vehicle _x)], "_AT"] call CBA_fnc_find) > 0) || (([format["%1", (vehicle _x)], "_AAT"] call CBA_fnc_find) > 0) ) then
 	{
 		_x assignTeam "RED";
 	};

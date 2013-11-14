@@ -39,3 +39,6 @@ ACE_sys_tracking_MarkersEnabled = false;
 
 // Disables loss of gear for vehicle crew
 ace_sys_eject_fnc_weaponCheckEnabled = {false};
+
+// Disabled Lethal Tail Rotor
+ace_sys_rotoreffects_fnc_rocko_manshred = {};

@@ -10,6 +10,5 @@ if (!isDedicated && (player != player)) then
 };
 
 // Wait until player is dead and initialize ACRE.
-sleep 10;
-waitUntil{!alive player};
+waitUntil{sleep 10; !alive player};
 [true] call acre_api_fnc_setSpectator;

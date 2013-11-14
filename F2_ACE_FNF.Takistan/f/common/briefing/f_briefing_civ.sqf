@@ -23,7 +23,7 @@ _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
 *** Insert mission credits here. ***
 <br/><br/>
-Made with F2_FNF (http://github.com/cambam47/F2_FNF), a modification of F2 (http://www.ferstaberinde.com/f2/en/)
+Made with F2_ACE_FNF, a modification of F2 (http://www.ferstaberinde.com/f2/en/) v1.0
 "]];
 
 // ====================================================================================

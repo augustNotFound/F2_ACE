@@ -5,7 +5,7 @@
 // General Equipment
 
 _unit addWeapon "ACE_Earplugs";
-_success = [_unit, 1, 1, 1] call ACE_fnc_PackIFAK;
+_success = [_unit, 2, 2, 0] call ACE_fnc_PackIFAK;
 
 // ====================================================================================
 
