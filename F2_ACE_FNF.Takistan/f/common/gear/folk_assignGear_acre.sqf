@@ -86,20 +86,20 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
+		_unit addWeapon _radio1;
 		_unit addWeapon _radio2;
 	};
   
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
 	{
-		_unit addWeapon _radio1;
 		_unit addWeapon _radio2;
 	}; 
 
 // LOADOUT: MEDIC
 	case "m":
 	{
-		_unit addWeapon _radio2;
+
 	};
 
 // LOADOUT: FIRE TEAM LEADER
