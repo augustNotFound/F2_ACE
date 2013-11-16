@@ -86,25 +86,26 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
+		_unit addWeapon _radio1;
 		_unit addWeapon _radio2;
 	};
   
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
 	{
-		_unit addWeapon _radio1;
 		_unit addWeapon _radio2;
 	}; 
 
 // LOADOUT: MEDIC
 	case "m":
 	{
-		_unit addWeapon _radio2;
+		//_unit addWeapon _radio2;
 	};
 
 // LOADOUT: FIRE TEAM LEADER
 	case "ftl":
 	{
+		//_unit addWeapon _radio2;
 	};	
 
 
@@ -125,6 +126,12 @@ switch (_typeofUnit) do
 	{
 		//_unit addWeapon _radio2;
 	};		
+	
+// LOADOUT: RIFLEMAN (AT)	
+	case "aat":
+	{
+		//_unit addWeapon _radio2;
+	};	
 	
 // LOADOUT: SURFACE TO AIR MISSILE GUNNER 
 	case "samg":

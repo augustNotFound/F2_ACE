@@ -107,7 +107,7 @@ class Mission
 	randomSeed=3165154;
 	class Intel
 	{
-		briefingName="F2_ACE";
+		briefingName="F2_ACE_FNF";
 		briefingDescription="*** Insert mission description here. ***";
 		startWeather=0.25;
 		forecastWeather=0.25;
@@ -119,7 +119,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=417;
+		items=416;
 		class Item0
 		{
 			side="WEST";
@@ -14870,11 +14870,11 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={1518.851,433.59161,1678.6843};
-					azimut=1.4615065;
+					azimut=1.4615099;
 					special="NONE";
 					id=788;
 					side="WEST";
@@ -14929,6 +14929,20 @@ class Mission
 					text="UnitUSMC_B1_AT";
 					init="GrpUSMC_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="USMC Bravo 1 Rifleman (AT)";
+				};
+				class Item4
+				{
+					position[]={1530.6302,437.41135,1675.2664};
+					azimut=1.4615099;
+					special="NONE";
+					id=1199;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUSMC_B1_AAT";
+					init="GrpUSMC_B1 = group this; nul = [""aat"",this] call f_fnc_assignGear;";
+					description="USMC Bravo 1 Assistant Anti-Tank Rifleman";
 				};
 			};
 		};
@@ -19828,29 +19842,6 @@ class Mission
 		};
 		class Item355
 		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={1530.6302,437.41135,1675.2664};
-					azimut=1.4615099;
-					special="NONE";
-					id=1199;
-					side="WEST";
-					vehicle="USMC_Soldier";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.5;
-					text="UnitUSMC_B1_AAT";
-					init="GrpUSMC_B1 = group this; nul = [""aat"",this] call f_fnc_assignGear;";
-					description="USMC Bravo 1 Assistant Anti-Tank Rifleman";
-				};
-			};
-		};
-		class Item356
-		{
 			side="EAST";
 			class Vehicles
 			{
@@ -19872,7 +19863,7 @@ class Mission
 				};
 			};
 		};
-		class Item357
+		class Item356
 		{
 			side="GUER";
 			class Vehicles
@@ -19895,7 +19886,7 @@ class Mission
 				};
 			};
 		};
-		class Item358
+		class Item357
 		{
 			side="GUER";
 			class Vehicles
@@ -19918,7 +19909,7 @@ class Mission
 				};
 			};
 		};
-		class Item359
+		class Item358
 		{
 			side="EAST";
 			class Vehicles
@@ -19957,7 +19948,7 @@ class Mission
 				};
 			};
 		};
-		class Item360
+		class Item359
 		{
 			side="EAST";
 			class Vehicles
@@ -19996,7 +19987,7 @@ class Mission
 				};
 			};
 		};
-		class Item361
+		class Item360
 		{
 			side="EAST";
 			class Vehicles
@@ -20035,7 +20026,7 @@ class Mission
 				};
 			};
 		};
-		class Item362
+		class Item361
 		{
 			side="EAST";
 			class Vehicles
@@ -20116,7 +20107,7 @@ class Mission
 				};
 			};
 		};
-		class Item363
+		class Item362
 		{
 			side="EAST";
 			class Vehicles
@@ -20197,7 +20188,7 @@ class Mission
 				};
 			};
 		};
-		class Item364
+		class Item363
 		{
 			side="EAST";
 			class Vehicles
@@ -20278,7 +20269,7 @@ class Mission
 				};
 			};
 		};
-		class Item365
+		class Item364
 		{
 			side="EAST";
 			class Vehicles
@@ -20317,7 +20308,7 @@ class Mission
 				};
 			};
 		};
-		class Item366
+		class Item365
 		{
 			side="EAST";
 			class Vehicles
@@ -20398,7 +20389,7 @@ class Mission
 				};
 			};
 		};
-		class Item367
+		class Item366
 		{
 			side="EAST";
 			class Vehicles
@@ -20479,7 +20470,7 @@ class Mission
 				};
 			};
 		};
-		class Item368
+		class Item367
 		{
 			side="EAST";
 			class Vehicles
@@ -20560,7 +20551,7 @@ class Mission
 				};
 			};
 		};
-		class Item369
+		class Item368
 		{
 			side="EAST";
 			class Vehicles
@@ -20599,7 +20590,7 @@ class Mission
 				};
 			};
 		};
-		class Item370
+		class Item369
 		{
 			side="EAST";
 			class Vehicles
@@ -20680,7 +20671,7 @@ class Mission
 				};
 			};
 		};
-		class Item371
+		class Item370
 		{
 			side="EAST";
 			class Vehicles
@@ -20761,7 +20752,7 @@ class Mission
 				};
 			};
 		};
-		class Item372
+		class Item371
 		{
 			side="EAST";
 			class Vehicles
@@ -20842,7 +20833,7 @@ class Mission
 				};
 			};
 		};
-		class Item373
+		class Item372
 		{
 			side="EAST";
 			class Vehicles
@@ -20880,7 +20871,7 @@ class Mission
 				};
 			};
 		};
-		class Item374
+		class Item373
 		{
 			side="EAST";
 			class Vehicles
@@ -20918,7 +20909,7 @@ class Mission
 				};
 			};
 		};
-		class Item375
+		class Item374
 		{
 			side="EAST";
 			class Vehicles
@@ -20956,7 +20947,7 @@ class Mission
 				};
 			};
 		};
-		class Item376
+		class Item375
 		{
 			side="EAST";
 			class Vehicles
@@ -20994,7 +20985,7 @@ class Mission
 				};
 			};
 		};
-		class Item377
+		class Item376
 		{
 			side="EAST";
 			class Vehicles
@@ -21032,7 +21023,7 @@ class Mission
 				};
 			};
 		};
-		class Item378
+		class Item377
 		{
 			side="EAST";
 			class Vehicles
@@ -21084,7 +21075,7 @@ class Mission
 				};
 			};
 		};
-		class Item379
+		class Item378
 		{
 			side="EAST";
 			class Vehicles
@@ -21136,7 +21127,7 @@ class Mission
 				};
 			};
 		};
-		class Item380
+		class Item379
 		{
 			side="EAST";
 			class Vehicles
@@ -21188,7 +21179,7 @@ class Mission
 				};
 			};
 		};
-		class Item381
+		class Item380
 		{
 			side="EAST";
 			class Vehicles
@@ -21226,7 +21217,7 @@ class Mission
 				};
 			};
 		};
-		class Item382
+		class Item381
 		{
 			side="WEST";
 			class Vehicles
@@ -21265,7 +21256,7 @@ class Mission
 				};
 			};
 		};
-		class Item383
+		class Item382
 		{
 			side="WEST";
 			class Vehicles
@@ -21304,7 +21295,7 @@ class Mission
 				};
 			};
 		};
-		class Item384
+		class Item383
 		{
 			side="WEST";
 			class Vehicles
@@ -21343,7 +21334,7 @@ class Mission
 				};
 			};
 		};
-		class Item385
+		class Item384
 		{
 			side="WEST";
 			class Vehicles
@@ -21424,7 +21415,7 @@ class Mission
 				};
 			};
 		};
-		class Item386
+		class Item385
 		{
 			side="WEST";
 			class Vehicles
@@ -21505,7 +21496,7 @@ class Mission
 				};
 			};
 		};
-		class Item387
+		class Item386
 		{
 			side="WEST";
 			class Vehicles
@@ -21586,7 +21577,7 @@ class Mission
 				};
 			};
 		};
-		class Item388
+		class Item387
 		{
 			side="WEST";
 			class Vehicles
@@ -21625,7 +21616,7 @@ class Mission
 				};
 			};
 		};
-		class Item389
+		class Item388
 		{
 			side="WEST";
 			class Vehicles
@@ -21706,7 +21697,7 @@ class Mission
 				};
 			};
 		};
-		class Item390
+		class Item389
 		{
 			side="WEST";
 			class Vehicles
@@ -21787,7 +21778,7 @@ class Mission
 				};
 			};
 		};
-		class Item391
+		class Item390
 		{
 			side="WEST";
 			class Vehicles
@@ -21868,7 +21859,7 @@ class Mission
 				};
 			};
 		};
-		class Item392
+		class Item391
 		{
 			side="WEST";
 			class Vehicles
@@ -21907,7 +21898,7 @@ class Mission
 				};
 			};
 		};
-		class Item393
+		class Item392
 		{
 			side="WEST";
 			class Vehicles
@@ -21988,7 +21979,7 @@ class Mission
 				};
 			};
 		};
-		class Item394
+		class Item393
 		{
 			side="WEST";
 			class Vehicles
@@ -22069,7 +22060,7 @@ class Mission
 				};
 			};
 		};
-		class Item395
+		class Item394
 		{
 			side="WEST";
 			class Vehicles
@@ -22150,7 +22141,7 @@ class Mission
 				};
 			};
 		};
-		class Item396
+		class Item395
 		{
 			side="WEST";
 			class Vehicles
@@ -22202,7 +22193,7 @@ class Mission
 				};
 			};
 		};
-		class Item397
+		class Item396
 		{
 			side="WEST";
 			class Vehicles
@@ -22254,7 +22245,7 @@ class Mission
 				};
 			};
 		};
-		class Item398
+		class Item397
 		{
 			side="WEST";
 			class Vehicles
@@ -22306,7 +22297,7 @@ class Mission
 				};
 			};
 		};
-		class Item399
+		class Item398
 		{
 			side="WEST";
 			class Vehicles
@@ -22358,7 +22349,7 @@ class Mission
 				};
 			};
 		};
-		class Item400
+		class Item399
 		{
 			side="WEST";
 			class Vehicles
@@ -22396,7 +22387,7 @@ class Mission
 				};
 			};
 		};
-		class Item401
+		class Item400
 		{
 			side="WEST";
 			class Vehicles
@@ -22434,7 +22425,7 @@ class Mission
 				};
 			};
 		};
-		class Item402
+		class Item401
 		{
 			side="WEST";
 			class Vehicles
@@ -22472,7 +22463,7 @@ class Mission
 				};
 			};
 		};
-		class Item403
+		class Item402
 		{
 			side="WEST";
 			class Vehicles
@@ -22510,7 +22501,7 @@ class Mission
 				};
 			};
 		};
-		class Item404
+		class Item403
 		{
 			side="WEST";
 			class Vehicles
@@ -22562,7 +22553,7 @@ class Mission
 				};
 			};
 		};
-		class Item405
+		class Item404
 		{
 			side="WEST";
 			class Vehicles
@@ -22614,7 +22605,7 @@ class Mission
 				};
 			};
 		};
-		class Item406
+		class Item405
 		{
 			side="WEST";
 			class Vehicles
@@ -22666,7 +22657,7 @@ class Mission
 				};
 			};
 		};
-		class Item407
+		class Item406
 		{
 			side="WEST";
 			class Vehicles
@@ -22704,7 +22695,7 @@ class Mission
 				};
 			};
 		};
-		class Item408
+		class Item407
 		{
 			side="WEST";
 			class Vehicles
@@ -22742,7 +22733,7 @@ class Mission
 				};
 			};
 		};
-		class Item409
+		class Item408
 		{
 			side="WEST";
 			class Vehicles
@@ -22794,7 +22785,7 @@ class Mission
 				};
 			};
 		};
-		class Item410
+		class Item409
 		{
 			side="WEST";
 			class Vehicles
@@ -22846,7 +22837,7 @@ class Mission
 				};
 			};
 		};
-		class Item411
+		class Item410
 		{
 			side="EAST";
 			class Vehicles
@@ -22898,7 +22889,7 @@ class Mission
 				};
 			};
 		};
-		class Item412
+		class Item411
 		{
 			side="EAST";
 			class Vehicles
@@ -22950,7 +22941,7 @@ class Mission
 				};
 			};
 		};
-		class Item413
+		class Item412
 		{
 			side="EAST";
 			class Vehicles
@@ -23002,7 +22993,7 @@ class Mission
 				};
 			};
 		};
-		class Item414
+		class Item413
 		{
 			side="EAST";
 			class Vehicles
@@ -23040,7 +23031,7 @@ class Mission
 				};
 			};
 		};
-		class Item415
+		class Item414
 		{
 			side="EAST";
 			class Vehicles
@@ -23078,7 +23069,7 @@ class Mission
 				};
 			};
 		};
-		class Item416
+		class Item415
 		{
 			side="EAST";
 			class Vehicles
@@ -25216,26 +25207,8 @@ class Mission
 	};
 	class Markers
 	{
-		items=21;
+		items=19;
 		class Item0
-		{
-			position[]={7785.8906,298.56845,1849.2832};
-			name="1_3_2";
-			text="USMC Desert";
-			type="Empty";
-			a=0;
-			b=0;
-		};
-		class Item1
-		{
-			position[]={8214.5908,296.04001,1824.0203};
-			name="1_1_1";
-			text="RU Desert";
-			type="Empty";
-			a=0;
-			b=0;
-		};
-		class Item2
 		{
 			position[]={106.41798,311.17209,2316.0652};
 			name="1_3_2_5_1";
@@ -25244,7 +25217,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item3
+		class Item1
 		{
 			position[]={2581.2163,426.1619,1426.7272};
 			name="1_2_1";
@@ -25253,7 +25226,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item4
+		class Item2
 		{
 			position[]={2579.8384,404.38049,939.94751};
 			name="1_2_1_1";
@@ -25262,7 +25235,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item5
+		class Item3
 		{
 			position[]={2583.4009,442.17126,1573.1257};
 			name="1_2_1_2";
@@ -25271,7 +25244,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item6
+		class Item4
 		{
 			position[]={2582.7769,391.64716,1106.656};
 			name="1_2_1_3";
@@ -25280,7 +25253,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item7
+		class Item5
 		{
 			position[]={2581.2456,393.98434,768.84595};
 			name="1_2_1_1_2";
@@ -25289,7 +25262,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item8
+		class Item6
 		{
 			position[]={2166.8267,512.03595,1640.8416};
 			name="1_1";
@@ -25298,7 +25271,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item9
+		class Item7
 		{
 			position[]={2175.8169,460.59915,1366.1477};
 			name="1_2";
@@ -25307,7 +25280,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item10
+		class Item8
 		{
 			position[]={2190.8003,410.92032,1073.4753};
 			name="1_3";
@@ -25316,7 +25289,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item11
+		class Item9
 		{
 			position[]={2183.7134,401.85083,796.17798};
 			name="1_3_1";
@@ -25325,7 +25298,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item12
+		class Item10
 		{
 			position[]={1741.7074,463.36768,1632.4236};
 			name="1_3_2_1";
@@ -25334,7 +25307,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item13
+		class Item11
 		{
 			position[]={1748.6595,512.15448,1369.1707};
 			name="1_3_2_2";
@@ -25343,7 +25316,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item14
+		class Item12
 		{
 			position[]={1446.0609,482.37326,1068.8533};
 			name="1_3_2_3";
@@ -25352,7 +25325,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item15
+		class Item13
 		{
 			position[]={1453.3412,547.9931,824.95972};
 			name="1_3_2_4";
@@ -25361,7 +25334,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item16
+		class Item14
 		{
 			position[]={2583.2886,411.83829,1258.1882};
 			name="1_2_1_4";
@@ -25370,7 +25343,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item17
+		class Item15
 		{
 			position[]={2165.8618,370.08667,504.0647};
 			name="1_3_1_1";
@@ -25379,7 +25352,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item18
+		class Item16
 		{
 			position[]={1417.9906,430.87033,1505.0398};
 			name="1_3_2_5_2";
@@ -25388,7 +25361,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item19
+		class Item17
 		{
 			position[]={1435.6205,505.94672,1201.3191};
 			name="1_3_2_6_1";
@@ -25397,7 +25370,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item20
+		class Item18
 		{
 			position[]={1439.2601,508.80997,941.37378};
 			name="1_3_2_7_1";

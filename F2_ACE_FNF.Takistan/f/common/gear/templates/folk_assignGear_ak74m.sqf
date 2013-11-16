@@ -244,9 +244,7 @@ switch (_typeofUnit) do
 		{_unit addmagazine _smokegrenade;} foreach [1];
 		_unit addweapon "Binocular";
 		
-		_unit addWeapon _bagMedium;
-		[_unit, _RATmag, 2] call ACE_fnc_PackMagazine;
-		[_unit, _riflemag, 5] call ACE_fnc_PackMagazine;
+		_unit addWeapon _RAT;
 	};	
 	
 // LOADOUT: SURFACE TO AIR MISSILE GUNNER 

@@ -27,13 +27,13 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
   
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 
 // LOADOUT: MEDIC
@@ -48,67 +48,67 @@ switch (_typeofUnit) do
 // LOADOUT: FIRE TEAM LEADER
 	case "ftl":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 	
 // LOADOUT: SURFACE TO AIR MISSILE GUNNER 
 	case "samg":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 	
 // LOADOUT: ASSISTANT SURFACE TO AIR MISSILE GUNNER
 	case "samag":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 	
 // LOADOUT: MEDIUM MG GUNNER	
 	case "mmgg":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER	
 	case "mmgag":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 	
 // LOADOUT: HEAVY MG GUNNER
 	case "hmgg":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 	
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
 	case "hmgag":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 
 // LOADOUT: MEDIUM AT GUNNER
 	case "matg":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 	
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER	
 	case "matag":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 	
 // LOADOUT: HEAVY AT GUNNER
 	case "hatg":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 	
 // LOADOUT: HEAVY AT ASSISTANT GUNNER	
 	case "hatag":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 	
 // LOADOUT: MORTAR GUNNER
@@ -138,7 +138,7 @@ switch (_typeofUnit) do
 // LOADOUT: GROUND VEHICLE CREW
 	case "c":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 		_success = [_unit, "ACE_Morphine", 1] call ACE_fnc_PackMagazine;
 		_success = [_unit, "ACE_Epinephrine", 1] call ACE_fnc_PackMagazine;
 		_success = [_unit, "ACE_Medkit", 1] call ACE_fnc_PackMagazine;
@@ -147,7 +147,7 @@ switch (_typeofUnit) do
 // LOADOUT: AIR VEHICLE PILOTS
 	case "p":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 		_success = [_unit, "ACE_Morphine", 1] call ACE_fnc_PackMagazine;
 		_success = [_unit, "ACE_Epinephrine", 1] call ACE_fnc_PackMagazine;
 		_success = [_unit, "ACE_Medkit", 1] call ACE_fnc_PackMagazine;
@@ -156,7 +156,7 @@ switch (_typeofUnit) do
 // LOADOUT: ENGINEER
 	case "eng":
 	{
-		_unit addweapon "ACE_Map_Tools";
+		//_unit addweapon "ACE_Map_Tools";
 	};	
 	
 // DEFAULT
