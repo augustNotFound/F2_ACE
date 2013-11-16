@@ -290,7 +290,7 @@ switch (_typeofUnit) do
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
    default
    {
-		_unit addWeapon _radio2;		
+		//_unit addWeapon _radio2;		
 		if (true) exitwith {player globalchat format ["DEBUG (f\common\folk_assignGear_acre.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
    };
 
