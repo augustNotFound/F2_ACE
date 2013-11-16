@@ -99,11 +99,7 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIC
 	case "m":
 	{
-<<<<<<< HEAD
 		//_unit addWeapon _radio2;
-=======
-
->>>>>>> 00c316821ebcd81a24123441883c8d520da88b85
 	};
 
 // LOADOUT: FIRE TEAM LEADER
